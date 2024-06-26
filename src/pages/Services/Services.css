@@ -1,0 +1,19 @@
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centraliza os cards horizontalmente */
+  gap: 2rem; /* Espaçamento entre os cards */
+
+  /* Responsividade para tablets */
+  @media (min-width: 768px) {
+    gap: 2rem; /* Espaçamento entre os cards */
+    justify-content: space-between; /* Distribui os cards igualmente */
+  }
+
+  /* Responsividade para desktops */
+  @media (min-width: 1024px) {
+    justify-content: center; /* Centraliza os cards */
+    gap: 2rem; /* Reduz o espaçamento entre os cards */
+  }
+}

@@ -1,0 +1,16 @@
+/* Arquivo: src/components/Footer/Footer.css */
+
+.footer {
+  background-color: #8a0383d0;
+  color: #fff;
+  text-align: center;
+  padding: 10px 2;
+  position: fixed;
+  bottom: -50px; /* Inicialmente fora da tela */
+  width: 100%;
+  transition: bottom 0.3s ease; /* Transição suave para animar o aparecimento */
+}
+
+.footer.visible {
+  bottom: 0; /* Mostra o footer quando chegar ao fim da página */
+}

@@ -1,0 +1,70 @@
+/* Header.css */
+
+header {
+  background-color: #ff2600af;
+  color: #fff;
+  padding: 10px 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+header .top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .top-nav .left,
+header .top-nav .center,
+header .top-nav .right {
+  flex: 1;
+}
+
+header .top-nav .center {
+  text-align: center;
+}
+
+header .top-nav .right {
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header .top-nav .right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-right: 15%;
+}
+
+header .top-nav .right ul li {
+  margin-left: 15px;
+}
+
+header .top-nav .right ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hamburger-menu {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  header .top-nav .right ul {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}
