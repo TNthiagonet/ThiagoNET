@@ -5,8 +5,8 @@
   background-color: #0fd1d1f1;
   padding: 10px;
   position: fixed;
-  top: 60px;
-  right: 10px;
+  top: 80px;
+  right: 0px;
   z-index: 3;
   text-align: center;
   width: 100%;
@@ -28,7 +28,9 @@
 }
 
 .mobile-menu ul li a {
+  padding: 30px;
   color: #fff;
+  font-size: 30px;
   text-decoration: none;
   display: block;
 }
