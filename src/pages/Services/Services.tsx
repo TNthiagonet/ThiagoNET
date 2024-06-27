@@ -1,8 +1,10 @@
 import React from 'react';
 import './Services.css';
+import Lottie from 'lottie-react';
 import CardDefault from '../../components/Card/Card';
 // Importe a imagem corretamente
 import ReactImg1 from '../../components/Card/img/react-img1.png';
+import animationData from '../../Animations/AnimationServicos.json'; 
 
 
 const Services: React.FC = () => {
@@ -10,7 +12,9 @@ const Services: React.FC = () => {
     <section id="about">
       <h1>Services</h1>
       <p>Esta é a página de serviços.</p>
-
+      <div className="animation-container">
+        <Lottie animationData={animationData} loop autoplay style={{ width: '100%', height: 'auto' }} />
+      </div>
       <div className="card-container">
         <CardDefault
           imageUrl={ReactImg1}

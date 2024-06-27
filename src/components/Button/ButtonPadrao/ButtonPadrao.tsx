@@ -1,14 +1,12 @@
-// ButtonPadrao.tsx
-
 import React from 'react';
 import './ButtonPadrao.css';
 
 interface ButtonPadraoProps {
-  onClick?: () => void;
   children: React.ReactNode;
+  onClick: () => void;
 }
 
-const ButtonPadrao: React.FC<ButtonPadraoProps> = ({ onClick, children }) => {
+const ButtonPadrao: React.FC<ButtonPadraoProps> = ({ children, onClick }) => {
   return (
     <button className="button-padrao" onClick={onClick}>
       {children}

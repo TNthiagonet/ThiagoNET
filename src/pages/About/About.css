@@ -1,0 +1,50 @@
+/* About.css */
+
+.about-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 150px 20px;
+  margin-top: -50px;
+}
+
+.about-content {
+  max-width: 600px;
+  text-align: right;
+}
+
+.about-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  margin-right: 1000px;
+  color: #ffffff;
+}
+
+.about-description{
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #c0d9e0;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  text-align: justify; /* Justifica o texto */
+}
+
+.about-description2 {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #c0d9e0;
+  margin-bottom: 20px;
+  text-align: justify; /* Justifica o texto */
+}
+
+.about-animation-container {
+  width: 100%;
+  max-width: 35vw;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .about-animation-container {
+    max-width: 300px;
+  }
+}
