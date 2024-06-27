@@ -3,13 +3,12 @@
 .card {
   border-radius: 0.52rem;
   overflow: hidden;
-  box-shadow: 0 2px 4px 1px rgba(50, 124, 236, 0.521);
+  box-shadow: 0 0 3px rgba(0, 140, 255, 0.774); /* Sombra suave */
   width: 300px; /* Ajuste conforme necessário */
   height: 80%; /* Reduz a altura do card em 20% */
 }
 
 .card:hover {
-  box-shadow: 0 2px 4px 1px rgba(42, 151, 224, 0.534);
   transform: scale(1.01); /* Aplica um zoom de 10% (escala 1.1) */
 }
 
