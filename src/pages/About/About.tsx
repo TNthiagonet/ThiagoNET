@@ -12,10 +12,7 @@ const About: React.FC = () => {
       <div className="about-content">
         <h1 className="about-title">Sobre</h1>
         <p className="about-description">
-          Aqui, nós transformamos ideias em realidade digital. Seja para criar um site, uma aplicação web, ou uma identidade visual marcante. Nós ajudamos você a alcançar seus objetivos.
-        </p>
-        <p className="about-description2">
-          Nossa missão é entender as necessidades únicas de cada cliente e desenvolver estratégias personalizadas para melhorar a visibilidade online de seus negócios. Combinamos criatividade e tecnologia para construir soluções digitais que realmente fazem a diferença.
+        Nossa missão é entender as necessidades únicas de cada cliente e desenvolver estratégias personalizadas para melhorar a visibilidade online de seus negócios. Combinamos criatividade e tecnologia para construir soluções digitais que realmente fazem a diferença.
         </p>
         <p className="about-description2">
           Desenvolvemos websites responsivos e otimizados para mecanismos de busca, garantindo que sua presença online seja impactante e eficiente. Desde o design até a implementação, oferecemos soluções de alta qualidade que refletem a identidade e os valores do seu negócio.
