@@ -2,25 +2,25 @@
 
 .footer {
   background-image: linear-gradient(to bottom, 
-  #030027f1,
-  #070055f1,
-  #0b007cf1,
-  #0c0183f1,
-  #0e028df1,
-  #0e019cf1,
-  #0f01a8f1,
-  #1001b4f1,
-  #1202bdf1,
-  #1202bdf1,
-  #1001b4f1,
-  #0f01a8f1,
-  #0e019cf1,
-  #0e028df1,
-  #0c0183f1,
-  #0b007cf1,
-  #070055f1,
-  #030027f1
-);
+    #030027f1,
+    #070055f1,
+    #0b007cf1,
+    #0c0183f1,
+    #0e028df1,
+    #0e019cf1,
+    #0f01a8f1,
+    #1001b4f1,
+    #1202bdf1,
+    #1202bdf1,
+    #1001b4f1,
+    #0f01a8f1,
+    #0e019cf1,
+    #0e028df1,
+    #0c0183f1,
+    #0b007cf1,
+    #070055f1,
+    #030027f1
+  );
   color: #fff;
   text-align: center;
   padding: 10px 2;
@@ -32,4 +32,13 @@
 
 .footer.visible {
   bottom: 0; /* Mostra o footer quando chegar ao fim da página */
+}
+
+.footer a {
+  text-decoration: none; /* Remove o sublinhado dos links dentro do footer */
+}
+
+.footer a.thiagonet {
+  color: #fff; /* Cor branca para o texto */
+  font-weight: bold; /* Texto em negrito */
 }

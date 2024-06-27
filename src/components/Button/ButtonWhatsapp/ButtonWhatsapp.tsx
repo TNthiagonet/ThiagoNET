@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Lottie from 'lottie-react';
-import whatsappAnimation from '../../Animations/Whatsapp.json';
-import whatsappTnAnimation from '../../Animations/WhatsappTN.json';
+import whatsappAnimation from '../../../Animations/Whatsapp.json';
+import whatsappTnAnimation from '../../../Animations/WhatsappTN.json';
 
 interface AnimationData {
   // Defina a estrutura conforme necessário com base no conteúdo do arquivo JSON

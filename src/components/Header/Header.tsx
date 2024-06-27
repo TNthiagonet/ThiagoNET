@@ -14,10 +14,10 @@ const Header: React.FC = () => {
       <div className="header-content">
         <nav className="top-nav">
           <div className="left">
-            {/* Remova o elemento <img> */}
-            <div className="logo-text">ThiagoNET</div> {/* Texto centralizado */}
+            <a href="https://thiagonet.com" className="logo-text">ThiagoNET</a> {/* Link centralizado */}
           </div>
           <div className="center">
+            {/* Aqui pode adicionar conteúdo centralizado, se necessário */}
           </div>
           <div className="right">
             <ul className={`menu ${mobileMenuOpen ? 'open' : ''}`}>

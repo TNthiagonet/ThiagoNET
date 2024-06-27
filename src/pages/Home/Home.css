@@ -1,3 +1,74 @@
-h1 {
-  margin-top: 50px;
+/* Home.css */
+
+.home-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px 20px;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.home-content {
+  max-width: 600px;
+  text-align: center;
+}
+
+.home-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.home-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+.cta-button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  background: linear-gradient(1deg, 
+  #030027f1,
+  #070055f1,
+  #0b007cf1,
+  #0c0183f1,
+  #0e028df1,
+  #0e019cf1,
+  #0f01a8f1,
+  #1001b4f1,
+  #1202bdf1,
+  #1202bdf1,
+  #1001b4f1,
+  #0f01a8f1,
+  #0e019cf1,
+  #0e028df1,
+  #0c0183f1,
+  #0b007cf1,
+  #070055f1,
+  #030027f1);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease; /* Transição suave do gradiente */
+  border-radius: 10px; /* Borda arredondada */
+}
+
+.cta-button:hover {
+  transform: scale(1.01); /* Efeito de escala para criar o brilho */
+  filter: brightness(1.2) contrast(1.2); /* Ajusta brilho e contraste */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra sutil */
+}
+
+.animation-container {
+  width: 100%;
+  max-width: 35vw;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .animation-container {
+    max-width: 300px;
+  }
 }
