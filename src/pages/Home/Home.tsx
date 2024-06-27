@@ -8,9 +8,12 @@ const Home: React.FC = () => {
   return (
     <section id="home" className="home-section">
       <div className="home-content">
-        <h1 className="home-title">Bem-vindo ao seu template básico</h1>
+        <h1 className="home-title">Olá!</h1>
         <p className="home-description">
-          Este é o seu template básico com menus laterais. Explore e descubra o mundo do desenvolvimento front-end!
+          Aqui, nós transformamos ideias em realidade digital.
+          Seja para criar um site, uma aplicação web,
+          ou uma identidade visual marcante.
+          Nós ajudamos você a alcançar seus objetivos.
         </p>
         <ButtonPadrao>Comece Agora</ButtonPadrao> {/* Utilizando o componente ButtonPadrao */}
       </div>
