@@ -2,7 +2,10 @@ import React from 'react';
 import './Services.css';
 import Lottie from 'lottie-react';
 import CardDefault from '../../components/Card/Card';
-import ReactImg1 from '../../components/Card/img/react-img1.png';
+import Registro from '../../components/Card/img/dominio.png';
+import Criacao from '../../components/Card/img/webdeveloper.png';
+import Hospedagem from '../../components/Card/img/hosting.png';
+import Manutencao from '../../components/Card/img/security.png';
 import animationData from '../../Animations/AnimationServicos.json';
 
 const Services: React.FC = () => {
@@ -19,7 +22,7 @@ const Services: React.FC = () => {
       </div>
       <div className="services-card-container">
         <CardDefault
-          imageUrl={ReactImg1}
+          imageUrl={Registro}
           title="Registro"
           description="www.SeuNomeOuMarca.com.br"
           buttonLabel="Ver Mais"
@@ -27,7 +30,7 @@ const Services: React.FC = () => {
         />
 
         <CardDefault
-          imageUrl={ReactImg1}
+          imageUrl={Criacao}
           title="Criação"
           description="Desenvolvemos seu App Web"
           buttonLabel="Ver Mais"
@@ -35,7 +38,7 @@ const Services: React.FC = () => {
         />
 
         <CardDefault
-          imageUrl={ReactImg1}
+          imageUrl={Hospedagem}
           title="Hospedagem"
           description="Mantemos seu serviço seguro."
           buttonLabel="Ver Mais"
@@ -43,7 +46,7 @@ const Services: React.FC = () => {
         />
 
         <CardDefault
-          imageUrl={ReactImg1}
+          imageUrl={Manutencao}
           title="Manutenção"
           description="Garantimos a qualidade."
           buttonLabel="Ver Mais"
