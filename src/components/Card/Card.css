@@ -1,12 +1,21 @@
 /* Arquivo: src/components/Card/Card.css */
 
 .card {
-  border-radius: 0.5rem;
+  border-radius: 0.52rem;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.521);
+  box-shadow: 0 2px 4px 1px rgba(50, 124, 236, 0.521);
   width: 300px; /* Ajuste conforme necessário */
   height: 80%; /* Reduz a altura do card em 20% */
 }
+
+.card:hover {
+  box-shadow: 0 2px 4px 1px rgba(42, 151, 224, 0.534);
+  transform: scale(1.01); /* Aplica um zoom de 10% (escala 1.1) */
+}
+
+ .card h2 {
+  color: #fffafa;
+ }
 
 .card-image {
   width: 100%;
@@ -15,6 +24,7 @@
 }
 
 .card-content {
+  background-color:#3493ff5e;
   padding: 1rem;
   height: 40%; /* Ajuste a altura do conteúdo para manter a proporção do card */
 }
@@ -27,20 +37,40 @@
 
 .card-description {
   font-size: 1rem;
-  color: #666;
+  color: #fffafa;
   margin-bottom: 1rem;
 }
 
 .card-button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: #3B82F6;
+  background: linear-gradient(1deg, 
+  #030027f1,
+  #070055f1,
+  #0b007cf1,
+  #0c0183f1,
+  #0e028df1,
+  #0e019cf1,
+  #0f01a8f1,
+  #1001b4f1,
+  #1202bdf1,
+  #1202bdf1,
+  #1001b4f1,
+  #0f01a8f1,
+  #0e019cf1,
+  #0e028df1,
+  #0c0183f1,
+  #0b007cf1,
+  #070055f1,
+  #030027f1);
   color: white;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .card-button:hover {
-  background-color: #2563EB;
+  transform: scale(1.01); /* Efeito de escala para criar o brilho */
+  filter: brightness(1.1) contrast(1.2); /* Ajusta brilho e contraste */
+  box-shadow: 0 2px 4px  rgba(36, 0, 238, 0.466);
 }

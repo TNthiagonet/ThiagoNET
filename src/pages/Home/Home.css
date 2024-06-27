@@ -14,15 +14,17 @@
 }
 
 .home-title {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 20px;
-  color: #e6f4ff;
+  color: #ffffff;
+  text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.712); /* Adiciona sombra leve */
 }
 
 .home-description {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1.6;
-  color: #b0c1cf;
+  color: #eff1f3;
+  text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.712); /* Adiciona sombra leve */
 }
 
 .animation-container {

@@ -32,7 +32,8 @@ const Card: React.FC<CardProps> = ({
       <div className="card-content">
         <h2 className="card-title">{title}</h2>
         <p className="card-description">{description}</p>
-        <a href={buttonUrl} className="card-button">{buttonLabel}</a>
+        <a href={buttonUrl} target={"_blank"} className="card-button">{buttonLabel}</a>
+      
       </div>
     </div>
   );
