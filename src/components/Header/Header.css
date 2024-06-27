@@ -30,6 +30,10 @@ header {
   text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.712); /* Adiciona sombra leve */
 }
 
+.header:hover {
+  transform: scale(1.1);
+}
+
 .header-content {
   position: relative;
   z-index: 2; /* Garante que o conteúdo do header esteja acima de outros elementos */
@@ -47,6 +51,10 @@ header {
 .header-content .top-nav .center,
 .header-content .top-nav .right {
   flex: 1;
+}
+
+.header-content .top-nav .left:hover{
+  transform: scale(1.005);
 }
 
 .header-content .top-nav .left .logo-text {
@@ -77,6 +85,10 @@ header {
 
 .header-content .top-nav .right ul li {
   margin-left: 15px;
+}
+
+.header-content .top-nav .right ul li:hover {
+  transform: scale(1.1);
 }
 
 .header-content .top-nav .right ul li a {

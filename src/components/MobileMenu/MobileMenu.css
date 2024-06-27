@@ -48,8 +48,12 @@
 
 .mobile-menu ul li a {
   padding: 30px;
-  color: #fff;
+  color: #ffffff;
   font-size: 30px;
   text-decoration: none;
   display: block;
+}
+
+.mobile-menu ul li a:hover{
+  transform: scale(1.1); 
 }
