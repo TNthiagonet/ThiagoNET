@@ -1,40 +1,73 @@
-/* Header.css */
-
+/* Estilo para o header */
 header {
-  background-color: #ff2600af;
+  background-image: linear-gradient(to bottom, 
+  #030027f1,
+  #070055f1,
+  #0b007cf1,
+  #0c0183f1,
+  #0e028df1,
+  #0e019cf1,
+  #0f01a8f1,
+  #1001b4f1,
+  #1202bdf1,
+  #1202bdf1,
+  #1001b4f1,
+  #0f01a8f1,
+  #0e019cf1,
+  #0e028df1,
+  #0c0183f1,
+  #0b007cf1,
+  #070055f1,
+  #030027f1
+);
   color: #fff;
   padding: 20px 40px;
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 2;
+  overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse os limites do header */
 }
 
-header .top-nav {
+
+.header-content {
+  position: relative;
+  z-index: 2; /* Garante que o conteúdo do header esteja acima de outros elementos */
+}
+
+.header-content .top-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-right: 30px;
+  height: 100%; /* Garante que o top-nav ocupe toda a altura do header */
 }
 
-header .top-nav .left,
-header .top-nav .center,
-header .top-nav .right {
+.header-content .top-nav .left,
+.header-content .top-nav .center,
+.header-content .top-nav .right {
   flex: 1;
 }
 
-header .top-nav .center {
+.header-content .top-nav .left .logo-text {
+  font-size: 34px;
+  font-weight: bold;
+  color: #fff;
+  
+}
+
+.header-content .top-nav .center {
   text-align: center;
 }
 
-header .top-nav .right {
+.header-content .top-nav .right {
   text-align: right;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-header .top-nav .right ul {
+.header-content .top-nav .right ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -42,11 +75,11 @@ header .top-nav .right ul {
   margin-right: 15%;
 }
 
-header .top-nav .right ul li {
+.header-content .top-nav .right ul li {
   margin-left: 15px;
 }
 
-header .top-nav .right ul li a {
+.header-content .top-nav .right ul li a {
   color: #fff;
   font-size: 20px;
   text-decoration: none;
@@ -62,7 +95,7 @@ header .top-nav .right ul li a {
 }
 
 @media (max-width: 768px) {
-  header .top-nav .right ul {
+  .header-content .top-nav .right ul {
     display: none;
   }
 

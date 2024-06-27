@@ -14,13 +14,13 @@ aside.left-menu li {
 }
 
 aside.left-menu {
-  background-color: #4caf4f;
+  background-color: #4caf4f00;
   left: 0;
   width: 81px;
 }
 
 aside.right-menu {
-  background-color: #2195f3;
+  background-color: #2195f300;
   right: 0;
   width: 81px;
 }

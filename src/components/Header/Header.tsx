@@ -11,25 +11,27 @@ const Header: React.FC = () => {
 
   return (
     <header>
-      <nav className="top-nav">
-        <div className="left">
-          <img src="caminho/para/sua/logo.png" alt="Logo" />
-        </div>
-        <div className="center">
-          {/* Espaço vazio */}
-        </div>
-        <div className="right">
-          <ul className={`menu ${mobileMenuOpen ? 'open' : ''}`}>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#services">Serviços</a></li>
-            <li><a href="#contact">Contato</a></li>
-          </ul>
-          <div className="hamburger-menu" onClick={toggleMenu}>
-            {mobileMenuOpen ? '✕' : '☰'}
+      <div className="header-content">
+        <nav className="top-nav">
+          <div className="left">
+            {/* Remova o elemento <img> */}
+            <div className="logo-text">ThiagoNET</div> {/* Texto centralizado */}
           </div>
-        </div>
-      </nav>
+          <div className="center">
+          </div>
+          <div className="right">
+            <ul className={`menu ${mobileMenuOpen ? 'open' : ''}`}>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#services">Serviços</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div className="hamburger-menu" onClick={toggleMenu}>
+              {mobileMenuOpen ? '✕' : '☰'}
+            </div>
+          </div>
+        </nav>
+      </div>
       <MobileMenu isOpen={mobileMenuOpen} />
     </header>
   );
