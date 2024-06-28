@@ -2,41 +2,42 @@
 
 import React from 'react';
 import './Contact.css';
+import { FaFacebook, FaTwitter, FaInstagram, FaPhoneAlt } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
+import Lottie from 'lottie-react';
+import animationData from '../../Animations/AnimationMail.json';
 
 const Contact: React.FC = () => {
+  const handleEmailClick = () => {
+    window.location.href = 'mailto:juancost10@gmail.com'; // Substitua pelo seu email
+  };
+
+  const handlePhoneClick = () => {
+    window.location.href = 'tel:+5583987315844'; // Substitua pelo seu número de telefone
+  };
+
   return (
     <section id="contact">
       <div className="contact-content">
         <div className="contact-header">
           <h1>Contato</h1>
-          <p>Se preferir, entre em contato por email.</p>
+          <p>Se preferir, entre em contato por email ou telefone.</p>
         </div>
         <div className="contact-animations">
-          {/* Adicione a animação Lottie aqui, se necessário */}
+          <Lottie animationData={animationData} loop autoplay style={{ width: '50%', height: 'auto' }} />
         </div>
-        <div className="contact-form">
-          <iframe
-            id="JotFormIFrame-241787699553073"
-            title="Formulário de Contato do Site"
-            allowTransparency={true}
-            allow="geolocation; microphone; camera; fullscreen"
-            src="https://form.jotform.com/241787699553073"
-            frameBorder={0}
-            style={{
-              minWidth: '100%',
-              maxWidth: '100%',
-              height: '1024px',
-              border: 'none',
-              overflow: 'hidden',
-            }}
-            scrolling="no"
-            onLoad={() => {
-              window.parent.scrollTo(0, 0);
-              // Adicione outros scripts de manipulação do JotForm aqui, se necessário
-            }}
-          ></iframe>
-          <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
-          <script>{`window.jotformEmbedHandler("iframe[id='JotFormIFrame-241787699553073']", "https://form.jotform.com/")`}</script>
+        <div className="contact-icons">
+          <MdEmail onClick={handleEmailClick} className="contact-icon" size={40} />
+          <FaPhoneAlt onClick={handlePhoneClick} className="contact-icon" size={40} />
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+            <FaFacebook className="contact-icon" size={40} />
+          </a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+            <FaTwitter className="contact-icon" size={40} />
+          </a>
+          <a href="https://www.instagram.com/jcgoleiros" target="_blank" rel="noopener noreferrer">
+            <FaInstagram className="contact-icon" size={40} />
+          </a>
         </div>
       </div>
     </section>

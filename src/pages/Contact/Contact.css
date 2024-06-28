@@ -2,123 +2,79 @@
 
 /* Estilo principal da seção "Contact" */
 #contact {
-  padding: 100px 20px; /* Define o preenchimento da seção */
-  background-color: #0091ff00; /* Cor de fundo da seção */
+  padding: 100px 20px;
+  background-color: #0091ff00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* Estilo do conteúdo central da seção "Contact" */
 .contact-content {
-  max-width: 800px; /* Define a largura máxima do conteúdo */
-  margin: 0 auto; /* Centraliza o conteúdo na página */
-  background-color: #dff6fd00; /* Cor de fundo do conteúdo */
-  padding: 40px; /* Espaçamento interno do conteúdo */
-  border-radius: 8px; /* Arredonda as bordas do conteúdo */
-  box-shadow: 0 0 20px rgba(0, 140, 255, 0.774); /* Sombra suave */
-  position: relative; /* Posição relativa para posicionamento absoluto dos elementos internos */
+  max-width: 800px;
+  background-color: #dff6fd00;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(30, 255, 0, 0.774);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Estilo do cabeçalho da seção "Contact" */
 .contact-header {
-  text-align: center; /* Alinha o texto ao centro */
-  margin-bottom: 30px; /* Define a margem inferior */
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .contact-header h1 {
-  font-size: 3.5rem; /* Tamanho da fonte do título */
-  color: #ffffff; /* Cor do texto do título */
+  font-size: 3.5rem;
+  color: #ffffff;
   text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.712);
 }
 
 .contact-header p {
-  font-size: 1.5rem; /* Tamanho da fonte do texto */
-  color: #ffffff; /* Cor do texto */
+  font-size: 1.5rem;
+  color: #ffffff;
   text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.712);
-  margin-bottom: 20px; /* Define a margem inferior */
+  margin-bottom: 20px;
 }
 
-/* Estilo do formulário de contato */
-.contact-form {
-  display: grid; /* Layout de grade para o formulário */
-  gap: 20px; /* Espaçamento entre os elementos do formulário */
+/* Estilo dos ícones de redes sociais e contatos */
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
-.form-group {
-  display: grid; /* Layout de grade para cada grupo de formulário */
+.contact-icons .contact-icon {
+  margin: 0 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  color: #939e92; /* Cor padrão dos ícones */
 }
 
-label {
-  font-weight: bold; /* Texto do rótulo em negrito */
-  color: #ffffff; /* Cor do texto do rótulo */
-  text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.712);
-}
-
-input,
-textarea {
-  width: 100%; /* Largura total para inputs e textarea */
-  padding: 10px; /* Espaçamento interno */
-  font-size: 1rem; /* Tamanho da fonte */
-  border: 1px solid #ccc; /* Borda cinza */
-  border-radius: 4px; /* Arredonda as bordas */
-  transition: border-color 0.3s ease; /* Transição suave da cor da borda */
-}
-
-input:focus,
-textarea:focus {
-  outline: none; /* Remove o contorno ao focar */
-  border-color: #5f9ea0; /* Cor da borda ao focar */
-}
-
-textarea {
-  resize: vertical; /* Permite redimensionamento vertical */
-  min-height: 150px; /* Altura mínima para textarea */
-}
-
-button {
-  background: linear-gradient(1deg, 
-  #030027f1,
-  #070055f1,
-  #0b007cf1,
-  #0c0183f1,
-  #0e028df1,
-  #0e019cf1,
-  #0f01a8f1,
-  #1001b4f1,
-  #1202bdf1,
-  #1202bdf1,
-  #1001b4f1,
-  #0f01a8f1,
-  #0e019cf1,
-  #0e028df1,
-  #0c0183f1,
-  #0b007cf1,
-  #070055f1,
-  #030027f1);
-  color: #fff; /* Cor do texto do botão */
-  padding: 12px 10px; /* Espaçamento interno */
-  font-size: 1rem; /* Tamanho da fonte */
-  border: none; /* Sem borda */
-  border-radius: 4px; /* Arredonda as bordas */
-  cursor: pointer; /* Cursor ponteiro */
-  transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
-}
-
-button:hover {
-  transform: scale(1.05);
+.contact-icons .contact-icon:hover {
+  transform: scale(1.2);
+  color: #ffffff; /* Cor dos ícones ao passar o mouse */
 }
 
 /* Estilo para as animações de contato */
 .contact-animations {
-  display: flex; /* Layout flexível para as animações */
-  justify-content: center; /* Centraliza as animações horizontalmente */
-  margin-top: -60px; /* Ajuste fino para posicionar acima do formulário */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .animation-item {
-  text-align: center; /* Alinha o texto ao centro */
+  text-align: center;
 }
 
 .animation-item p {
   font-size: 20px;
-  color: #ffffff; 
+  color: #ffffff;
   text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.712);
 }

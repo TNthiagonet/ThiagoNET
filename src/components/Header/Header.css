@@ -1,25 +1,27 @@
 /* Estilo para o header */
 header {
   background-image: linear-gradient(to bottom, 
-    #030027f1,
-    #070055f1,
-    #0b007cf1,
-    #0c0183f1,
-    #0e028df1,
-    #0e019cf1,
-    #0f01a8f1,
-    #1001b4f1,
-    #1202bdf1,
-    #1202bdf1,
-    #1001b4f1,
-    #0f01a8f1,
-    #0e019cf1,
-    #0e028df1,
-    #0c0183f1,
-    #0b007cf1,
-    #070055f1,
-    #030027f1
-  );
+  #0a1f00f0,
+  #123200f0,
+  #1a4500f0,
+  #225800f0,
+  #2a6b00f0,
+  #327e00f0,
+  #3a9100f0,
+  #42a400f0,
+  #4ab700f0,
+  #4ab700f0,
+  #42a400f0,
+  #3a9100f0,
+  #327e00f0,
+  #2a6b00f0,
+  #225800f0,
+  #1a4500f0,
+  #123200f0,
+  #0a1f00f0
+);
+
+
   color: #fff;
   padding: 20px 40px;
   width: 100%;

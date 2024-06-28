@@ -20,7 +20,7 @@ const Header: React.FC = () => {
       <div className="header-content">
         <nav className="top-nav">
           <div className="left">
-            <a href="https://thiagonet.com" className="logo-text">ThiagoNET</a> {/* Link centralizado */}
+            <a href="#" className="logo-text">JC Goleiros</a> {/* Link centralizado */}
           </div>
           <div className="center">
             {/* Aqui pode adicionar conteúdo centralizado, se necessário */}

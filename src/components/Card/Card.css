@@ -3,7 +3,7 @@
 .card {
   border-radius: 0.52rem;
   overflow: hidden;
-  box-shadow: 0 0 3px rgba(0, 140, 255, 0.774); /* Sombra suave */
+  box-shadow: 0 0 8px rgba(30, 255, 0, 0.774);  /* Sombra suave */
   width: 300px; /* Ajuste conforme necessário */
   height: 80%; /* Reduz a altura do card em 20% */
 }
@@ -23,7 +23,7 @@
 }
 
 .card-content {
-  background-color:#3493ff5e;
+  background-color:#2c462e5e;
   padding: 1rem;
   height: 40%; /* Ajuste a altura do conteúdo para manter a proporção do card */
 }
@@ -44,24 +44,24 @@
   display: inline-block;
   padding: 0.75rem 1.5rem;
   background: linear-gradient(1deg, 
-  #030027f1,
-  #070055f1,
-  #0b007cf1,
-  #0c0183f1,
-  #0e028df1,
-  #0e019cf1,
-  #0f01a8f1,
-  #1001b4f1,
-  #1202bdf1,
-  #1202bdf1,
-  #1001b4f1,
-  #0f01a8f1,
-  #0e019cf1,
-  #0e028df1,
-  #0c0183f1,
-  #0b007cf1,
-  #070055f1,
-  #030027f1);
+  #102700f1,
+  #183a00f1,
+  #204d00f1,
+  #275e00f1,
+  #2e6e00f1,
+  #347e00f1,
+  #388600f1,
+  #3e9400f1,
+  #43a100f1,
+  #43a100f1,
+  #3e9400f1,
+  #388600f1,
+  #347e00f1,
+  #2e6e00f1,
+  #275e00f1,
+  #204d00f1,
+  #183a00f1,
+  #102700f1);
   color: white;
   border-radius: 0.5rem;
   text-decoration: none;
@@ -71,5 +71,5 @@
 .card-button:hover {
   transform: scale(1.01); /* Efeito de escala para criar o brilho */
   filter: brightness(1.1) contrast(1.2); /* Ajusta brilho e contraste */
-  box-shadow: 0 2px 4px  rgba(36, 0, 238, 0.466);
+  box-shadow: 0 2px 4px  rgba(0, 238, 32, 0.466);
 }

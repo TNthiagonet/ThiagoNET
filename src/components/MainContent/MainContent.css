@@ -3,25 +3,27 @@ body {
   margin: 0;
   padding: 0;
   background-image: linear-gradient(to bottom, 
-  #001027f1,
-  #00183af1,
-  #00204df1,
-  #00275ef1,
-  #002e6ef1,
-  #00347ef1,
-  #003886f1,
-  #003e94f1,
-  #0043a1f1,
-  #0043a1f1,
-  #003e94f1,
-  #003886f1,
-  #00347ef1,
-  #002e6ef1,
-  #00275ef1,
-  #00204df1,
-  #00183af1,
-  #001027f1
+  #164520e0,
+  #1e5a2be0,
+  #276f36e0,
+  #318240e0,
+  #3b924ae0,
+  #459254e0,
+  #4b9c5ee0,
+  #57a568e0,
+  #63af72e0,
+  #63af72e0,
+  #57a568e0,
+  #4b9c5ee0,
+  #459254e0,
+  #3b924ae0,
+  #318240e0,
+  #276f36e0,
+  #1e5a2be0,
+  #164520e0
 );
+
+
   box-sizing: border-box;
   display: flex;
   min-height: 100vh;
