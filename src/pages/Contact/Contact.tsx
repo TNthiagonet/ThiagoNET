@@ -2,8 +2,6 @@
 
 import React from 'react';
 import './Contact.css';
-import Lottie from 'lottie-react';
-import animationEmail from '../../Animations/AnimationMail.json';
 
 const Contact: React.FC = () => {
   return (
@@ -11,25 +9,34 @@ const Contact: React.FC = () => {
       <div className="contact-content">
         <div className="contact-header">
           <h1>Contato</h1>
+          <p>Se preferir, entre em contato por email.</p>
         </div>
         <div className="contact-animations">
-          <div className="animation-item">
-            <Lottie animationData={animationEmail} loop autoplay />
-          </div>
+          {/* Adicione a animação Lottie aqui, se necessário */}
         </div>
         <div className="contact-form">
           <iframe
-            title="JotForm"
-            id="JotFormIFrame"
-            allowFullScreen
+            id="JotFormIFrame-241787699553073"
+            title="Formulário de Contato do Site"
+            allowTransparency={true}
+            allow="geolocation; microphone; camera; fullscreen"
             src="https://form.jotform.com/241787699553073"
+            frameBorder={0}
             style={{
-              width: '100%',
-              height: '100%', // Ajuste conforme necessário
-              minHeight: '900px', // Altura mínima para evitar barras de rolagem
+              minWidth: '100%',
+              maxWidth: '100%',
+              height: '1024px',
               border: 'none',
+              overflow: 'hidden',
+            }}
+            scrolling="no"
+            onLoad={() => {
+              window.parent.scrollTo(0, 0);
+              // Adicione outros scripts de manipulação do JotForm aqui, se necessário
             }}
           ></iframe>
+          <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+          <script>{`window.jotformEmbedHandler("iframe[id='JotFormIFrame-241787699553073']", "https://form.jotform.com/")`}</script>
         </div>
       </div>
     </section>
