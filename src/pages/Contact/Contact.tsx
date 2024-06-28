@@ -1,3 +1,5 @@
+// Contact.tsx
+
 import React from 'react';
 import './Contact.css';
 import Lottie from 'lottie-react';
@@ -9,29 +11,26 @@ const Contact: React.FC = () => {
       <div className="contact-content">
         <div className="contact-header">
           <h1>Contato</h1>
-          <p>Se preferir, entre em contato por email.</p>
         </div>
         <div className="contact-animations">
           <div className="animation-item">
             <Lottie animationData={animationEmail} loop autoplay />
-            <p>contato@thiagonet.com</p>
           </div>
         </div>
-        <form className="contact-form">
-          <div className="form-group">
-            <label htmlFor="name">Name:</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div className="form-group">
-            <label htmlFor="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div className="form-group">
-            <label htmlFor="message">Message:</label>
-            <textarea id="message" name="message" rows={5} required></textarea>
-          </div>
-          <button type="submit">Enviar Mensagem</button>
-        </form>
+        <div className="contact-form">
+          <iframe
+            title="JotForm"
+            id="JotFormIFrame"
+            allowFullScreen
+            src="https://form.jotform.com/241787699553073"
+            style={{
+              width: '100%',
+              height: '100%', // Ajuste conforme necessário
+              minHeight: '900px', // Altura mínima para evitar barras de rolagem
+              border: 'none',
+            }}
+          ></iframe>
+        </div>
       </div>
     </section>
   );
