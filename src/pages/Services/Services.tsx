@@ -1,12 +1,13 @@
 import React from 'react';
 import './Services.css';
 import Lottie from 'lottie-react';
-import CardDefault from '../../components/Card/Card';
+import Card from '../../components/Card/Card'; // Atualizei o nome do componente
 import Registro from '../../components/Card/img/dominio.png';
 import Criacao from '../../components/Card/img/webdeveloper.png';
 import Hospedagem from '../../components/Card/img/hosting.png';
 import Manutencao from '../../components/Card/img/security.png';
 import animationData from '../../Animations/AnimationServicos.json';
+import cardClickSound from '../../Sounds/Laser.mp3'; // Adicione o som de clique do cartão
 
 const Services: React.FC = () => {
   return (
@@ -21,36 +22,40 @@ const Services: React.FC = () => {
         <p>Nossos serviços mais procurados</p>
       </div>
       <div className="services-card-container">
-        <CardDefault
+        <Card
           imageUrl={Registro}
           title="Registro"
           description="www.SeuNomeOuMarca.com.br"
           buttonLabel="Ver Mais"
           buttonUrl="https://wa.me/5583981790771"
+          soundSrc={cardClickSound}
         />
 
-        <CardDefault
+        <Card
           imageUrl={Criacao}
           title="Criação"
           description="Desenvolvemos seu App Web"
           buttonLabel="Ver Mais"
           buttonUrl="https://wa.me/5583981790771"
+          soundSrc={cardClickSound}
         />
 
-        <CardDefault
+        <Card
           imageUrl={Hospedagem}
           title="Hospedagem"
           description="Mantemos seu serviço seguro."
           buttonLabel="Ver Mais"
           buttonUrl="https://wa.me/5583981790771"
+          soundSrc={cardClickSound}
         />
 
-        <CardDefault
+        <Card
           imageUrl={Manutencao}
           title="Manutenção"
           description="Garantimos a qualidade."
           buttonLabel="Ver Mais"
           buttonUrl="https://wa.me/5583981790771"
+          soundSrc={cardClickSound}
         />
       </div>
     </section>

@@ -1,25 +1,17 @@
 /* Estilo para o header */
 header {
   background-image: linear-gradient(to bottom, 
-    #030027f1,
-    #070055f1,
-    #0b007cf1,
-    #0c0183f1,
-    #0e028df1,
-    #0e019cf1,
-    #0f01a8f1,
-    #1001b4f1,
-    #1202bdf1,
-    #1202bdf1,
-    #1001b4f1,
-    #0f01a8f1,
-    #0e019cf1,
-    #0e028df1,
-    #0c0183f1,
-    #0b007cf1,
-    #070055f1,
-    #030027f1
-  );
+  #210032a2,
+  #310043a2,
+  #420054a2,
+  #520065a2,
+  #620076a2,
+  #620076a2,
+  #520065a2,
+  #420054a2,
+  #310043a2,
+  #210032a2
+);
   color: #fff;
   padding: 20px 40px;
   width: 100%;
@@ -50,12 +42,21 @@ header {
 }
 
 .header-content .top-nav .left .logo-text {
-  font-size: 34px;
+  font-size: 25px; /* Tamanho da fonte da logo */
   font-weight: bold;
-  color: #fff;
+  color: #ffffff ;
   text-decoration: none;
+  white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+  overflow: hidden; /* Evita que o texto derrame do container */
+  text-overflow: ellipsis; /* Mostra um ponto de elipse (...) quando o texto estoura */
+  display: flex; /* Adiciona flexbox para alinhar logo e texto */
+  align-items: center; /* Centraliza logo e texto verticalmente */
 }
 
+.header-content .top-nav .left .logo-image {
+  height: 50px; /* Define a altura da imagem */
+  margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
 
 .header-content .top-nav .center {
   text-align: center;
@@ -85,7 +86,7 @@ header {
 }
 
 .header-content .top-nav .right ul li a {
-  color: #fff;
+  color: #ffffff ;
   font-size: 20px;
   text-decoration: none;
   font-weight: bold;

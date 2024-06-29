@@ -3,25 +3,19 @@
 .mobile-menu {
   display: none;
   background-image: linear-gradient(to bottom, 
-    #030027f1,
-    #070055f1,
-    #0b007cf1,
-    #0c0183f1,
-    #0e028df1,
-    #0e019cf1,
-    #0f01a8f1,
-    #1001b4f1,
-    #1202bdf1,
-    #1202bdf1,
-    #1001b4f1,
-    #0f01a8f1,
-    #0e019cf1,
-    #0e028df1,
-    #0c0183f1,
-    #0b007cf1,
-    #070055f1,
-    #030027f1
-  );
+  #210032de,
+  #310043de,
+  #420054de,
+  #520065de,
+  #620076de,
+  #620076de,
+  #520065de,
+  #420054de,
+  #310043de,
+  #210032de
+);
+
+
   padding: 10px;
   position: fixed;
   top: 80px;

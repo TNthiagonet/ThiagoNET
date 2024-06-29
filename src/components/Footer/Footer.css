@@ -2,26 +2,19 @@
 
 .footer {
   background-image: linear-gradient(to bottom, 
-    #030027f1,
-    #070055f1,
-    #0b007cf1,
-    #0c0183f1,
-    #0e028df1,
-    #0e019cf1,
-    #0f01a8f1,
-    #1001b4f1,
-    #1202bdf1,
-    #1202bdf1,
-    #1001b4f1,
-    #0f01a8f1,
-    #0e019cf1,
-    #0e028df1,
-    #0c0183f1,
-    #0b007cf1,
-    #070055f1,
-    #030027f1
-  );
-  color: #fff;
+  #210032a2,
+  #310043a2,
+  #420054a2,
+  #520065a2,
+  #620076a2,
+  #620076a2,
+  #520065a2,
+  #420054a2,
+  #310043a2,
+  #210032a2
+);
+
+  color: #9c929e;
   text-align: center;
   padding: 10px 2;
   position: fixed;
@@ -39,6 +32,6 @@
 }
 
 .footer a.thiagonet {
-  color: #fff; /* Cor branca para o texto */
+  color: #d5b6db; /* Cor branca para o texto */
   font-weight: bold; /* Texto em negrito */
 }

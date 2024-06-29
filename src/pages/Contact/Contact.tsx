@@ -1,42 +1,103 @@
-// Contact.tsx
-
-import React from 'react';
+import React, { useRef } from 'react';
 import './Contact.css';
+import Lottie from 'lottie-react';
+import animationData from '../../Animations/Email.json';
+import emailHoverSound from '../../Sounds/Email.mp3';
+import telefoneHoverSound from '../../Sounds/Telefone.mp3';
+import facebookHoverSound from '../../Sounds/Facebook.mp3';
+import twitterHoverSound from '../../Sounds/Twitter.mp3';
+import instagramHoverSound from '../../Sounds/Instagram.mp3';
+import FacebookIcon from "../../img/Social/Facebook.png";
+import TwitterIcon from "../../img/Social/X.png";
+import InstagramIcon from "../../img/Social/Instagram.png";
+import PhoneIcon from "../../img/Social/Viber.png";
+import EmailIcon from "../../img/Social/Email.png";
 
 const Contact: React.FC = () => {
+  const emailRef = useRef<HTMLAnchorElement>(null);
+  const telefoneRef = useRef<HTMLAnchorElement>(null);
+  const facebookRef = useRef<HTMLAnchorElement>(null);
+  const twitterRef = useRef<HTMLAnchorElement>(null);
+  const instagramRef = useRef<HTMLAnchorElement>(null);
+
+  const handleEmailClick = () => {
+    window.location.href = 'mailto:juancost10@gmail.com';
+  };
+
+  const handleHoverSound = (sound: string, ref: React.RefObject<any>) => {
+    if (ref.current) {
+      const audio = new Audio(sound);
+      audio.volume = 0.5;
+      audio.play();
+      ref.current.addEventListener('mouseleave', () => {
+        audio.pause();
+        audio.currentTime = 0;
+      });
+    }
+  };
+
+  const handlePhoneClick = () => {
+    window.location.href = 'tel:+5583987315844';
+  };
+
   return (
     <section id="contact">
       <div className="contact-content">
         <div className="contact-header">
           <h1>Contato</h1>
-          <p>Se preferir, entre em contato por email.</p>
+          <p>Entre em contato por whatsapp, email, telefone, facebook, twitter ou instagram.</p>
         </div>
         <div className="contact-animations">
-          {/* Adicione a animação Lottie aqui, se necessário */}
+          <Lottie animationData={animationData} loop autoplay style={{ width: '30%', height: 'auto' }} />
         </div>
-        <div className="contact-form">
-          <iframe
-            id="JotFormIFrame-241787699553073"
-            title="Formulário de Contato do Site"
-            allowTransparency={true}
-            allow="geolocation; microphone; camera; fullscreen"
-            src="https://form.jotform.com/241787699553073"
-            frameBorder={0}
-            style={{
-              minWidth: '100%',
-              maxWidth: '100%',
-              height: '1024px',
-              border: 'none',
-              overflow: 'hidden',
-            }}
-            scrolling="no"
-            onLoad={() => {
-              window.parent.scrollTo(0, 0);
-              // Adicione outros scripts de manipulação do JotForm aqui, se necessário
-            }}
-          ></iframe>
-          <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
-          <script>{`window.jotformEmbedHandler("iframe[id='JotFormIFrame-241787699553073']", "https://form.jotform.com/")`}</script>
+        <div className="contact-icons">
+          <a
+            href="mailto:juancost10@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            onMouseEnter={() => handleHoverSound(emailHoverSound, emailRef)}
+            onClick={handleEmailClick}
+            ref={emailRef}
+          >
+            <img src={EmailIcon} className="contact-icon" alt="Email" />
+          </a>
+          <a
+            href="tel:+5583987315844"
+            target="_blank"
+            rel="noopener noreferrer"
+            onMouseEnter={() => handleHoverSound(telefoneHoverSound, telefoneRef)}
+            onClick={handlePhoneClick}
+            ref={telefoneRef}
+          >
+            <img src={PhoneIcon} className="contact-icon" alt="Telefone" />
+          </a>
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onMouseEnter={() => handleHoverSound(facebookHoverSound, facebookRef)}
+            ref={facebookRef}
+          >
+            <img src={FacebookIcon} className="contact-icon" alt="Facebook" />
+          </a>
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onMouseEnter={() => handleHoverSound(twitterHoverSound, twitterRef)}
+            ref={twitterRef}
+          >
+            <img src={TwitterIcon} className="contact-icon" alt="Twitter" />
+          </a>
+          <a
+            href="https://www.instagram.com/jcgoleiros"
+            target="_blank"
+            rel="noopener noreferrer"
+            onMouseEnter={() => handleHoverSound(instagramHoverSound, instagramRef)}
+            ref={instagramRef}
+          >
+            <img src={InstagramIcon} className="contact-icon" alt="Instagram" />
+          </a>
         </div>
       </div>
     </section>

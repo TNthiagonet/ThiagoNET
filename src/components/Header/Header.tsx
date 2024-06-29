@@ -1,18 +1,51 @@
-// Header.tsx
-
 import React, { useState } from 'react';
 import './Header.css';
 import MobileMenu from '../MobileMenu/MobileMenu';
+import Lottie from 'lottie-react';
+import animationMenuOpen from '../../Animations/MenuOpen.json';
+import animationMenuClose from '../../Animations/MenuClose.json';
+import menuOpenSound from '../../Sounds/Laser.mp3';
+import logoHoverSound from '../../Sounds/ItensHover.mp3'; // Importe o som ItensHover aqui
+
+type AnimationData = any;
 
 const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [soundPlayed, setSoundPlayed] = useState(false);
+  const [animationData, setAnimationData] = useState<AnimationData>(animationMenuOpen);
 
   const toggleMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
+    if (!soundPlayed) {
+      playMenuSound(menuOpenSound, 0.5);
+      setSoundPlayed(true);
+    }
+    setAnimationData(mobileMenuOpen ? animationMenuOpen : animationMenuClose);
   };
 
   const closeMenu = () => {
-    setMobileMenuOpen(false); // Função para fechar o menu
+    setMobileMenuOpen(false);
+    setAnimationData(animationMenuOpen);
+  };
+
+  const playMenuSound = (src: string, volume: number) => {
+    const audio = new Audio(src);
+    audio.volume = volume;
+    audio.play();
+    setTimeout(() => {
+      setSoundPlayed(false);
+    }, 500);
+  };
+
+  const handleAnimationComplete = () => {
+    setSoundPlayed(false);
+  };
+
+  // Função para reproduzir som ao fazer hover apenas nas logos
+  const playLogoHoverSound = () => {
+    const audio = new Audio(logoHoverSound);
+    audio.volume = 0.5; // Volume ajustável conforme necessário
+    audio.play();
   };
 
   return (
@@ -20,20 +53,35 @@ const Header: React.FC = () => {
       <div className="header-content">
         <nav className="top-nav">
           <div className="left">
-            <a href="https://thiagonet.com" className="logo-text">ThiagoNET</a> {/* Link centralizado */}
+            <a href="#" className="logo-text" onMouseEnter={playLogoHoverSound}>
+              ThiagoNET
+            </a>
           </div>
           <div className="center">
-            {/* Aqui pode adicionar conteúdo centralizado, se necessário */}
+            {/* Conteúdo centralizado, se necessário */}
           </div>
           <div className="right">
             <ul className={`menu ${mobileMenuOpen ? 'open' : ''}`}>
-              <li><a href="#home" onClick={closeMenu}>Home</a></li>
-              <li><a href="#about" onClick={closeMenu}>Sobre</a></li>
-              <li><a href="#services" onClick={closeMenu}>Serviços</a></li>
-              <li><a href="#contact" onClick={closeMenu}>Contato</a></li>
+              <li>
+                <a href="#home" onClick={() => { closeMenu(); playMenuSound(menuOpenSound, 0.5); }}>Home</a>
+              </li>
+              <li>
+                <a href="#about" onClick={() => { closeMenu(); playMenuSound(menuOpenSound, 0.5); }}>Sobre</a>
+              </li>
+              <li>
+                <a href="#services" onClick={() => { closeMenu(); playMenuSound(menuOpenSound, 0.5); }}>Serviços</a>
+              </li>
+              <li>
+                <a href="#contact" onClick={() => { closeMenu(); playMenuSound(menuOpenSound, 0.5); }}>Contato</a>
+              </li>
             </ul>
             <div className="hamburger-menu" onClick={toggleMenu}>
-              {mobileMenuOpen ? '✕' : '☰'}
+              <Lottie
+                animationData={animationData}
+                style={{ width: '40px', height: '40px' }}
+                onComplete={handleAnimationComplete}
+                onMouseEnter={() => { if (!mobileMenuOpen) playLogoHoverSound(); }} // Executa playLogoHoverSound apenas se o menu estiver fechado
+              />
             </div>
           </div>
         </nav>
