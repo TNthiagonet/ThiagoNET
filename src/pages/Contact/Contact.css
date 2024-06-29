@@ -12,9 +12,9 @@
 
 /* Estilo do conteúdo central da seção "Contact" */
 .contact-content {
-  max-width: 800px;
+  max-width: 500px;
   background-color: #dff6fd00;
-  padding: 40px;
+  padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 20px #620076;
   display: flex;

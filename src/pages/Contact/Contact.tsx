@@ -21,7 +21,7 @@ const Contact: React.FC = () => {
   const instagramRef = useRef<HTMLAnchorElement>(null);
 
   const handleEmailClick = () => {
-    window.location.href = 'mailto:juancost10@gmail.com';
+    window.location.href = 'mailto:thiagobrunomenezesdacosta@gmail.com';
   };
 
   const handleHoverSound = (sound: string, ref: React.RefObject<any>) => {
@@ -37,7 +37,7 @@ const Contact: React.FC = () => {
   };
 
   const handlePhoneClick = () => {
-    window.location.href = 'tel:+5583987315844';
+    window.location.href = 'tel:83981790771';
   };
 
   return (
@@ -52,7 +52,7 @@ const Contact: React.FC = () => {
         </div>
         <div className="contact-icons">
           <a
-            href="mailto:juancost10@gmail.com"
+            href="mailto:thiagobrunomenezesdacosta@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             onMouseEnter={() => handleHoverSound(emailHoverSound, emailRef)}
@@ -62,7 +62,7 @@ const Contact: React.FC = () => {
             <img src={EmailIcon} className="contact-icon" alt="Email" />
           </a>
           <a
-            href="tel:+5583987315844"
+            href="tel:+83981790771"
             target="_blank"
             rel="noopener noreferrer"
             onMouseEnter={() => handleHoverSound(telefoneHoverSound, telefoneRef)}
@@ -90,7 +90,7 @@ const Contact: React.FC = () => {
             <img src={TwitterIcon} className="contact-icon" alt="Twitter" />
           </a>
           <a
-            href="https://www.instagram.com/jcgoleiros"
+            href="https://www.instagram.com/thiagonet.com.br"
             target="_blank"
             rel="noopener noreferrer"
             onMouseEnter={() => handleHoverSound(instagramHoverSound, instagramRef)}
