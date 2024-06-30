@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './Header.css';
 import MobileMenu from '../MobileMenu/MobileMenu';
 import Lottie from 'lottie-react';
 import animationMenuOpen from '../../Animations/MenuOpen.json';
 import animationMenuClose from '../../Animations/MenuClose.json';
 import menuOpenSound from '../../Sounds/Laser.mp3';
-import logoHoverSound from '../../Sounds/ItensHover.mp3'; // Importe o som ItensHover aqui
+import logoHoverSound from '../../Sounds/ThiagoNET.mp3'; // Importe o som ItensHover aqui
 
 type AnimationData = any;
 
@@ -13,6 +13,7 @@ const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [soundPlayed, setSoundPlayed] = useState(false);
   const [animationData, setAnimationData] = useState<AnimationData>(animationMenuOpen);
+  const logoHoverAudio = useRef(new Audio(logoHoverSound)); // Usar useRef para armazenar o objeto de áudio
 
   const toggleMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -43,9 +44,12 @@ const Header: React.FC = () => {
 
   // Função para reproduzir som ao fazer hover apenas nas logos
   const playLogoHoverSound = () => {
-    const audio = new Audio(logoHoverSound);
-    audio.volume = 0.5; // Volume ajustável conforme necessário
-    audio.play();
+    if (!logoHoverAudio.current.paused) {
+      logoHoverAudio.current.pause();
+      logoHoverAudio.current.currentTime = 0;
+    }
+    logoHoverAudio.current.volume = 0.5; // Volume ajustável conforme necessário
+    logoHoverAudio.current.play();
   };
 
   return (
@@ -80,7 +84,6 @@ const Header: React.FC = () => {
                 animationData={animationData}
                 style={{ width: '40px', height: '40px' }}
                 onComplete={handleAnimationComplete}
-                onMouseEnter={() => { if (!mobileMenuOpen) playLogoHoverSound(); }} // Executa playLogoHoverSound apenas se o menu estiver fechado
               />
             </div>
           </div>

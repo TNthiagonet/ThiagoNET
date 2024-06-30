@@ -14,14 +14,14 @@
 }
 
 .home-title {
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 20px;
   color: #f9e1ff;
   text-shadow: -2px 2px 2px rgb(0, 0, 0); /* Adiciona sombra leve */
 }
 
 .home-description {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 1.6;
   color: #f9e1ff;
   text-shadow: -1px 1px 1px rgb(0, 0, 0); /* Adiciona sombra leve */
