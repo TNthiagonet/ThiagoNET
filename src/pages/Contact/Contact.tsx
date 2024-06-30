@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import './Contact.css';
 import Lottie from 'lottie-react';
-import animationData from '../../Animations/Email.json';
+import animationData from '../../Animations/ContactMe.json';
 import emailHoverSound from '../../Sounds/Email.mp3';
 import telefoneHoverSound from '../../Sounds/Telefone.mp3';
 import facebookHoverSound from '../../Sounds/Facebook.mp3';

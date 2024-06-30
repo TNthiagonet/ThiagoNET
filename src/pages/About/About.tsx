@@ -7,7 +7,7 @@ const About: React.FC = () => {
   return (
     <section id="about" className="about-section">
       <div className="about-animation-container">
-        <Lottie animationData={animationData} loop autoplay style={{ width: '100%', height: 'auto' }} />
+        <Lottie animationData={animationData} loop autoplay style={{ width: '170%', height: 'auto' }} />
       </div>
       <div className="about-content">
         <h1 className="about-title">Sobre</h1>

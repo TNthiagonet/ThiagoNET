@@ -38,6 +38,7 @@
   width: 100%; /* Define a largura máxima */
   max-width: 20vw; /* Define a largura máxima */
   margin: 0 auto 50px; /* Define a margem inferior */
+
 }
 
 /* Estilo para o contêiner dos cards */
@@ -51,6 +52,6 @@
 /* Responsividade para tablets */
 @media (max-width: 768px) {
   .services-animation-container {
-    max-width: 50%; /* Define a largura máxima para 50% */
+    max-width: 80%; /* Define a largura máxima para 50% */
   }
 }
