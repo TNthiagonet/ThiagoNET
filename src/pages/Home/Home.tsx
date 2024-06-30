@@ -20,7 +20,8 @@ const Home: React.FC = () => {
       <div className="home-content">
         <h1 className="home-title">Olá!</h1>
         <p className="home-description">
-          Bem-vindo à JC Goleiros! Aqui, desenvolvemos talentos e paixões, transformando jovens aspirantes em goleiros excepcionais. Com treinamentos personalizados, foco na técnica e uma equipe dedicada, estamos aqui para preparar você para os desafios do campo e além.
+        Bem-vindo à ThiagoNET!
+        Somos uma agência de desenvolvimento web dedicada a transformar suas ideias em realidade. Com um time especializado em design e desenvolvimento, criamos soluções digitais que destacam sua presença online. Nossa missão é potencializar seu negócio com websites modernos, eficientes e visualmente impactantes. Conecte-se conosco e descubra como podemos elevar sua marca ao próximo nível.
         </p>
         <ButtonPadrao onClick={handleNavigateToAbout} soundSrc={menuOpenSound}>Saiba mais</ButtonPadrao> {/* Passando o som para o botão */}
       </div>

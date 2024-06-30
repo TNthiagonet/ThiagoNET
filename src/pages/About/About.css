@@ -17,10 +17,9 @@
 
 /* Estilo para o título da seção "Sobre" */
 .about-title {
-  margin-top: 0px;
-  font-size: 4rem; /* Define o tamanho da fonte */
+  font-size: 3rem; /* Define o tamanho da fonte */
   margin-bottom: 20px; /* Define a margem inferior */
-  color: #ffffff; /* Define a cor do texto */
+  color: #f9e1ff; /* Define a cor do texto */
   text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.712); /* Adiciona sombra leve */
   text-align: left; /* Alinha o texto à esquerda */
 }
@@ -28,9 +27,9 @@
 
 /* Estilo para a descrição principal */
 .about-description {
-  font-size: 1.5rem; /* Define o tamanho da fonte */
+  font-size: 1rem; /* Define o tamanho da fonte */
   line-height: 1.6; /* Define a altura da linha */
-  color: #c0d9e0; /* Define a cor do texto */
+  color: #f9e1ff; /* Define a cor do texto */
   margin-bottom: 20px; /* Define a margem inferior */
   text-align: justify; /* Justifica o texto */
   text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.712); /* Adiciona sombra leve */
@@ -40,7 +39,7 @@
 .about-description2 {
   font-size: 1rem; /* Define o tamanho da fonte */
   line-height: 1.6; /* Define a altura da linha */
-  color: #c0d9e0; /* Define a cor do texto */
+  color: #f9e1ff; /* Define a cor do texto */
   margin-bottom: 20px; /* Define a margem inferior */
   text-align: justify; /* Justifica o texto */
   text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.712); /* Adiciona sombra leve */
