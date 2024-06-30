@@ -1,5 +1,4 @@
-/* Aplica em tudo start*/
-
+/* Importando fontes */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 body {
@@ -7,33 +6,29 @@ body {
   margin: 0;
   padding: 0;
   background-image: linear-gradient(to bottom, 
-  #210032,
-  #310043,
-  #420054,
-  #520065,
-  #620076,
-  #620076,
-  #520065,
-  #420054,
-  #310043,
-  #210032
-);
+    #210032,
+    #310043,
+    #420054,
+    #520065,
+    #620076,
+    #620076,
+    #520065,
+    #420054,
+    #310043,
+    #210032
+  );
+}
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   font-family: 'Montserrat', sans-serif;
 }
 
-p {
-  font-family: 'Montserrat', sans-serif;
-}
-/* Aplica em tudo end*/
-
-
-
+.main-container {
   box-sizing: border-box;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  position: relative; /* Adicionando para usar z-index */
 }
 
 main {
@@ -42,7 +37,7 @@ main {
   padding: 20px;
   flex-grow: 1;
   position: relative;
-  z-index: 0;
+  z-index: 1; /* Mantendo o conteúdo do main acima do CircleBG */
   padding-top: 43px;
 }
 
@@ -52,8 +47,68 @@ section {
 
 @media (max-width: 768px) {
   main {
-      margin-left: 0;
-      margin-right: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
+.circle-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0; /* Colocando CircleBG abaixo do main */
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: moveCircle 10s infinite alternate;
+}
+
+@keyframes moveCircle {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: calc(100% - 200px);
+  }
+  50% {
+    top: calc(100% - 200px);
+    left: calc(100% - 200px);
+  }
+  75% {
+    top: calc(100% - 200px);
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+.circle1 {
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, #ff6347, transparent);
+  animation-duration: 12s;
+}
+
+.circle2 {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, #4682b4, transparent);
+  animation-duration: 14s;
+}
+
+.circle3 {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, #32cd32, transparent);
+  animation-duration: 16s;
+}
