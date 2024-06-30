@@ -25,7 +25,7 @@ const Services: React.FC = () => {
         <Card
           imageUrl={Registro}
           title="Registro"
-          description="Ex: www.SuaMarca"
+          description="Ex: www.SuaMarca.com"
           buttonLabel="Ver Mais"
           buttonUrl="https://wa.me/5583981790771"
           soundSrc={cardClickSound}
