@@ -11,7 +11,7 @@ const About: React.FC = () => {
           animationData={animationData}
           loop
           autoplay
-          style={{ maxWidth: '100%', height: 'auto' }}
+          style={{ maxWidth: '80%', height: 'auto' }}
         />
       </div>
       <div className="about-content">

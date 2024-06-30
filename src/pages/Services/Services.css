@@ -52,6 +52,6 @@
 /* Responsividade para tablets */
 @media (max-width: 768px) {
   .services-animation-container {
-    max-width: 80%; /* Define a largura máxima para 50% */
+    max-width: 70%; /* Define a largura máxima para 50% */
   }
 }
