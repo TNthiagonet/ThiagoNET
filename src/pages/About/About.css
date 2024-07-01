@@ -11,6 +11,7 @@
 
 /* Estilo para o conteúdo da seção "Sobre" */
 .about-content {
+  margin-right: 0;
   flex: 1; /* Ocupa todo o espaço restante */
   max-width: 600px; /* Define a largura máxima */
   text-align: right; /* Alinha o texto à direita */
@@ -18,8 +19,8 @@
 
 /* Estilo para o título da seção "Sobre" */
 .about-title {
-  font-size: 3rem; /* Define o tamanho da fonte */
   margin-right: 600px;
+  font-size: 3rem; /* Define o tamanho da fonte */
   margin-bottom: 20px; /* Define a margem inferior */
   color: #f9e1ff; /* Define a cor do texto */
   text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.712); /* Adiciona sombra leve */
