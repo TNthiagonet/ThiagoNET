@@ -28,7 +28,7 @@
 
 /* Estilo para a descrição principal */
 .about-description, .about-description2 {
-  font-size: 1rem; /* Define o tamanho da fonte */
+  font-size: 0.9rem; /* Define o tamanho da fonte */
   line-height: 1.6; /* Define a altura da linha */
   color: #f9e1ff; /* Define a cor do texto */
   margin-bottom: 20px; /* Define a margem inferior */
