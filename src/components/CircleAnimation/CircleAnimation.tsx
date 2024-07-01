@@ -1,5 +1,5 @@
 import React from 'react';
-import './CircleBG.css';
+import './CircleAnimation.css';
 
 const CircleBG: React.FC = () => {
   return (

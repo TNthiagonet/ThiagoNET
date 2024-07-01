@@ -4,8 +4,8 @@ import Home from '../../pages/Home/Home';
 import About from '../../pages/About/About';
 import Services from '../../pages/Services/Services';
 import Contact from '../../pages/Contact/Contact';
-import CircleBG from '../../components/CircleBG/CircleBG';
-import BubbleAnimation from '../../components/BubbleAnimation/BubbleAnimation';
+import CircleAnimation from '../CircleAnimation/CircleAnimation';
+import EstrelaAnimation from '../EstrelaAnimation/EstrelaAnimation';
 
 const MainContent: React.FC = () => {
   return (
@@ -16,8 +16,8 @@ const MainContent: React.FC = () => {
         <Services />
         <Contact />
       </main>
-      <CircleBG />
-      <BubbleAnimation />
+      <CircleAnimation />
+      <EstrelaAnimation />
     </div>
   );
 };
