@@ -17,16 +17,16 @@ const About: React.FC = () => {
       <div className="about-content">
         <h1 className="about-title">Sobre</h1>
         <p className="about-description">
-          Desenvolvemos websites lindos e otimizados <br />
-          para mecanismos de busca, garantindo que sua <br />
+          Desenvolvemos websites lindos e otimizados 
+          para mecanismos de busca, garantindo que sua 
           presença online seja impactante e eficiente. 
         </p>
         <p className="about-description2">
-          Nossa missão é entender as necessidades únicas<br />
-          de cada cliente e desenvolver estratégias <br />
-          personalizadas para melhorar a visibilidade <br />
-          online de seus negócios. <br />
-          Combinamos criatividade e tecnologia <br />
+          Nossa missão é entender as necessidades únicas 
+          de cada cliente e desenvolver estratégias
+          personalizadas para melhorar a visibilidade
+          online de seus negócios.
+          Combinamos criatividade e tecnologia
           para construir soluções digitais fazem a diferença.
         </p>
       </div>

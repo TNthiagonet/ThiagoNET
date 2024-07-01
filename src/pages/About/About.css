@@ -2,68 +2,67 @@
 
 /* Estilo principal da seção "Sobre" */
 .about-section {
-  display: flex; /* Define o layout flexível */
-  justify-content: space-around; /* Distribui os itens com espaço ao redor */
-  align-items: center; /* Alinha os itens ao centro verticalmente */
-  padding: 150px 20px; /* Define o preenchimento da seção */
-  margin-top: -50px; /* Define a margem superior negativa */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 150px 20px;
+  margin-top: -50px;
+  width: 100%; /* Garante que a largura seja 100% */
+  box-sizing: border-box; /* Mantém o padding dentro do elemento */
+  overflow-x: hidden; /* Evita a barra de rolagem horizontal */
 }
 
 /* Estilo para o conteúdo da seção "Sobre" */
 .about-content {
-  margin-right: 0;
-  flex: 1; /* Ocupa todo o espaço restante */
-  max-width: 600px; /* Define a largura máxima */
-  text-align: right; /* Alinha o texto à direita */
+  flex: 1;
+  max-width: 600px;
+  text-align: right;
 }
 
 /* Estilo para o título da seção "Sobre" */
 .about-title {
-  margin-right: 600px;
-  font-size: 3rem; /* Define o tamanho da fonte */
-  margin-bottom: 20px; /* Define a margem inferior */
-  color: #f9e1ff; /* Define a cor do texto */
-  text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.712); /* Adiciona sombra leve */
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #f9e1ff;
+  text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.712);
 }
 
 /* Estilo para a descrição principal */
 .about-description, .about-description2 {
-  font-size: 0.9rem; /* Define o tamanho da fonte */
-  line-height: 1.6; /* Define a altura da linha */
-  color: #f9e1ff; /* Define a cor do texto */
-  margin-bottom: 20px; /* Define a margem inferior */
-  text-align: justify; /* Justifica o texto */
-  text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.712); /* Adiciona sombra leve */
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #f9e1ff;
+  margin-bottom: 20px;
+  text-align: justify;
+  text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.712);
 }
 
 /* Estilo para o contêiner da animação */
 .about-animation-container {
-  max-width: 35vw; /* Define a largura máxima em 35vw */
-  width: 100%; /* Define a largura em 100% */
-  height: auto; /* Define a altura automática */
+  max-width: 35vw;
+  width: 100%;
+  height: auto;
 }
 
 /* Media queries para dispositivos menores */
 @media (max-width: 768px) {
-  /* Ajuste da seção "Sobre" para dispositivos menores */
   .about-section {
-    flex-direction: column; /* Muda a direção do flex para coluna */
-    align-items: flex-start; /* Alinha os itens à esquerda */
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 20px; /* Reduz o padding para dispositivos menores */
   }
 
-  /* Ajuste do contêiner da animação para dispositivos menores */
   .about-animation-container {
-    max-width: 80%; /* Define a largura máxima em 80% */
-    margin-bottom: 20px; /* Define a margem inferior */
+    max-width: 80%;
+    margin-bottom: 20px;
   }
 
-  /* Ajuste do conteúdo da seção "Sobre" para dispositivos menores */
   .about-content {
-    text-align: left; /* Alinha o texto à esquerda */
+    text-align: left;
+    margin-right: 0; /* Remova o margin-right para dispositivos menores */
   }
 
-  /* Ajuste do título da seção "Sobre" para dispositivos menores */
   .about-title, .about-description, .about-description2 {
-    text-align: left; /* Alinha o texto à esquerda */
+    text-align: left;
   }
 }
