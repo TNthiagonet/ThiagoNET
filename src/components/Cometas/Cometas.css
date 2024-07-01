@@ -59,63 +59,68 @@
 
 /* Contêiner para as estrelas */
 .cometas .stars {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh; /* Ajustado para ocupar 100% da altura da viewport */
-  transform: rotate(-45deg);
-  overflow: hidden; /* Garante que as estrelas não saiam do contêiner */
-  pointer-events: none; /* As estrelas não interferem com cliques do usuário */
+  position: fixed; /* Define a posição fixa para o contêiner das estrelas */
+  top: 0; /* Coloca o contêiner no topo da janela */
+  left: 0; /* Coloca o contêiner no canto esquerdo da janela */
+  width: 100%; /* Ocupa toda a largura da janela */
+  height: 120%; /* Ocupa 120% da altura da janela, para garantir que todas as estrelas sejam cobertas */
+  transform: rotate(-45deg); /* Rotaciona o contêiner em -45 graus */
+  overflow: hidden; /* Garante que as estrelas dentro do contêiner não saiam */
+  pointer-events: none; /* Impede que as estrelas interfiram com cliques do usuário */
 }
 
 /* Estilo para cada estrela */
 .cometas .star {
-  --star-color: rgba(128, 0, 128, 0.192); /* Cor purple-pink com 70% de transparência */
-  --star-tail-length: 6em;
-  --star-tail-height: 2px;
-  --star-width: calc(var(--star-tail-length) / 6);
-  --fall-duration: 9s;
-  --tail-fade-duration: var(--fall-duration);
+  --star-color: rgba(255, 5, 255, 0.212); /* Define a cor das estrelas como roxo-rosa com 70% de transparência */
+  --star-tail-length: 7em; /* Define o comprimento do rastro da estrela como 6em */
+  --star-tail-height: 3px; /* Define a altura do rastro da estrela como 2px */
+  --fall-duration: 12s; /* Define a duração da animação de queda como 9 segundos */
+  --tail-fade-duration: var(--fall-duration); /* Define a duração da animação de desaparecimento do rastro */
 
-  position: absolute;
-  top: var(--top-offset); /* Mantenha o ajuste relativo */
-  left: 0;
-  width: var(--star-tail-length);
-  height: var(--star-tail-height);
-  background: linear-gradient(45deg, var(--star-color), transparent);
-  border-radius: 50%;
-  filter: drop-shadow(0 0 6px var(--star-color));
-  transform: translateX(100%); /* Ajustado para início fora da tela */
-  opacity: 0;
+  position: absolute; /* Define a posição absoluta para cada estrela */
+  top: var(--top-offset); /* Define a posição vertical da estrela, variável para ajuste */
+  left: 0; /* Coloca a estrela no lado esquerdo do contêiner */
+  width: var(--star-tail-length); /* Define o comprimento da estrela */
+  height: var(--star-tail-height); /* Define a altura do rastro da estrela */
+  background: linear-gradient(to right, transparent, var(--star-color)); /* Aplica um gradiente linear ao fundo da estrela */
+  border-radius: 50%; /* Define a borda da estrela como circular */
+  filter: drop-shadow(0 0 6px var(--star-color)); /* Aplica uma sombra à estrela */
+  transform: translate3d(104em, 0, 0); /* Translada a estrela horizontalmente em 104em */
+  opacity: 0; /* Inicia a estrela com opacidade 0 */
   animation: fall var(--fall-duration) var(--fall-delay) linear infinite, 
-             tail-fade var(--tail-fade-duration) var(--fall-delay) ease-out infinite;
+             tail-fade var(--tail-fade-duration) var(--fall-delay) ease-out infinite; /* Aplica animações de queda e desaparecimento do rastro */
 }
 
 @keyframes fall {
   0% {
-    transform: translateX(100%);
-    opacity: 0; /* Inicie com opacidade 0 */
+    transform: translate3d(-32em, 0, 0); /* Define a posição inicial da estrela fora do contêiner */
   }
   1% {
-    opacity: 1; /* Opacidade começa a aumentar logo no início */
+    opacity: 1; /* Aumenta a opacidade para 1% */
   }
   to {
-    transform: translateX(-100%); /* Ajustado para a esquerda */
+    transform: translate3d(104em, 0, 0); /* Move a estrela até -30em horizontalmente, ao longo da animação */
+    opacity: 0; /* Finaliza a estrela com opacidade 0 */
   }
 }
 
 @keyframes tail-fade {
   0%, 50% {
-    width: var(--star-tail-length);
-    opacity: 1;
+    width: var(--star-tail-length); /* Define o comprimento inicial do rastro */
+    opacity: 1; /* Inicia a opacidade do rastro em 1 */
   }
   70%, 80% {
-    width: 0;
-    opacity: 0.4;
+    width: 0; /* Reduz o comprimento do rastro para 0 */
   }
   100% {
-    width: 0;
-    opacity: 0;
+    width: 0; /* Finaliza o rastro com comprimento 0 */
+    opacity: 0.4; /* Finaliza o rastro com opacidade 0.4 */
+  }
+}
+
+
+@keyframes blink {
+  50% {
+    opacity: 0.6; /* Define a opacidade da animação de piscar para 0.6 a 50% do tempo */
   }
 }
