@@ -5,6 +5,7 @@ import About from '../../pages/About/About';
 import Services from '../../pages/Services/Services';
 import Contact from '../../pages/Contact/Contact';
 import CircleBG from '../../components/CircleBG/CircleBG';
+import BubbleAnimation from '../../components/BubbleAnimation/BubbleAnimation';
 
 const MainContent: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const MainContent: React.FC = () => {
         <Contact />
       </main>
       <CircleBG />
+      <BubbleAnimation />
     </div>
   );
 };

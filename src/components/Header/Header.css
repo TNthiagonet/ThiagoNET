@@ -12,7 +12,7 @@ header {
   #310043a2,
   #210032a2
 );
-  color: #fff;
+  color: #f9e1ff;
   padding: 20px 40px;
   width: 100%;
   position: fixed;
@@ -44,7 +44,7 @@ header {
 .header-content .top-nav .left .logo-text {
   font-size: 25px; /* Tamanho da fonte da logo */
   font-weight: bold;
-  color: #ffffff ;
+  color: #f9e1ff ;
   text-decoration: none;
   white-space: nowrap; /* Evita que o texto quebre em várias linhas */
   overflow: hidden; /* Evita que o texto derrame do container */
@@ -86,7 +86,7 @@ header {
 }
 
 .header-content .top-nav .right ul li a {
-  color: #ffffff ;
+  color: #f9e1ff ;
   font-size: 20px;
   text-decoration: none;
   font-weight: bold;
@@ -97,7 +97,7 @@ header {
   display: none;
   font-size: 34px;
   cursor: pointer;
-  color: #fff;
+  color: #f9e1ff;
   margin-right: 30px;
 }
 

@@ -1,0 +1,161 @@
+/* Define o container das animações */
+.circles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Ajustado para ocupar 100% da largura da tela */
+  height: 100vh; /* Ajustado para ocupar 100% da altura da tela */
+  overflow: hidden;
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 5vw; /* Width relativo à largura da tela */
+    height: 5vh; /* Height relativo à altura da tela */
+    animation: animate 27s linear infinite;
+    bottom: -15vh; /* Ajustado para ser relativo à altura da tela */
+
+    .lottie-container,
+    img {
+      width: 100%;
+      height: 100%;
+      filter: grayscale(100%);
+      opacity: 0.1;
+      transition: filter 0.3s, opacity 0.3s;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    &:hover .lottie-container,
+    &:hover img {
+      filter: grayscale(0%);
+      opacity: 0.1;
+    }
+  }
+
+  /* Define a animação das bolinhas */
+  @keyframes animate {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 0.1;
+      border-radius: 0;
+    }
+    100% {
+      transform: translateY(-100vh) rotate(720deg); /* Ajustado para ser relativo à altura da tela */
+      opacity: 0.1;
+      border-radius: 50%;
+    }
+  }
+
+  li:nth-child(1) {
+    left: 27vw;
+    width: 10vw;
+    height: 10vh;
+    animation-delay: 0s;
+    animation-duration: 14s;
+  }
+  li:nth-child(2) {
+    left: 10vw;
+    width: 4.8vw;
+    height: 4.8vh;
+    animation-delay: 1s;
+    animation-duration: 15s;
+  }
+  li:nth-child(3) {
+    left: 65vw;
+    width: 9vw;
+    height: 9vh;
+    animation-delay: 2s;
+    animation-duration: 16s;
+  }
+  li:nth-child(4) {
+    left: 42vw;
+    width: 3vw;
+    height: 3vh;
+    animation-delay: 3s;
+    animation-duration: 24s;
+  }
+  li:nth-child(5) {
+    left: 58vw;
+    width: 5.5vw;
+    height: 5.5vh;
+    animation-delay: 4s;
+    animation-duration: 18s;
+  }
+  li:nth-child(6) {
+    left: 73vw;
+    width: 6vw;
+    height: 6vh;
+    animation-delay: 5s;
+    animation-duration: 26s;
+  }
+  li:nth-child(7) {
+    left: 31vw;
+    width: 10vw;
+    height: 10vh;
+    animation-delay: 6s;
+    animation-duration: 20s;
+  }
+  li:nth-child(8) {
+    left: 50vw;
+    width: 6.1vw;
+    height: 6.1vh;
+    animation-delay: 7s;
+    animation-duration: 28s;
+  }
+  li:nth-child(9) {
+    left: 18vw;
+    width: 3.5vw;
+    height: 3.5vh;
+    animation-delay: 8s;
+    animation-duration: 24s;
+  }
+  li:nth-child(10) {
+    left: 78vw;
+    width: 13vw;
+    height: 13vh;
+    animation-delay: 9s;
+    animation-duration: 22s;
+  }
+  li:nth-child(11) {
+    left: 1vw;
+    width: 12vw;
+    height: 12vh;
+    animation-delay: 10s;
+    animation-duration: 10s;
+  }
+  li:nth-child(12) {
+    left: 90vw;
+    width: 11vw;
+    height: 11vh;
+    animation-delay: 11s;
+    animation-duration: 12s;
+  }
+  li:nth-child(13) {
+    left: 23vw;
+    width: 10vw;
+    height: 10vh;
+    animation-delay: 12s;
+    animation-duration: 19s;
+  }
+  li:nth-child(14) {
+    left: 50vw;
+    width: 8vw;
+    height: 8vh;
+    animation-delay: 13s;
+    animation-duration: 18s;
+  }
+  li:nth-child(15) {
+    left: 85vw;
+    width: 6vw;
+    height: 6vh;
+    animation-delay: 14s;
+    animation-duration: 15s;
+  }
+}
