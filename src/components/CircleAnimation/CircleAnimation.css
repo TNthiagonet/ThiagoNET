@@ -1,5 +1,5 @@
 .circle-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -9,7 +9,6 @@
 }
 
 .circle {
-  position: absolute;
   border-radius: 50%;
   opacity: 1;
   animation: moveCircle 10s infinite alternate;

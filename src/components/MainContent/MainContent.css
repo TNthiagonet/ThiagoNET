@@ -53,7 +53,7 @@ section {
 }
 
 .circle-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -63,7 +63,7 @@ section {
 }
 
 .circle {
-  position: absolute;
+  position: fixed;
   border-radius: 50%;
   opacity: 0.7;
   animation: moveCircle 10s infinite alternate;

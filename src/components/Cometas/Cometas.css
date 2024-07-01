@@ -1,5 +1,6 @@
 /* Reset básico para garantir que estilos globais não afetem as estrelas */
 .cometas * {
+  position: fixed;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
