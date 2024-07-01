@@ -74,7 +74,7 @@
   --star-color: rgba(255, 5, 255, 0.212); /* Define a cor das estrelas como roxo-rosa com 70% de transparência */
   --star-tail-length: 7em; /* Define o comprimento do rastro da estrela como 6em */
   --star-tail-height: 3px; /* Define a altura do rastro da estrela como 2px */
-  --fall-duration: 12s; /* Define a duração da animação de queda como 9 segundos */
+  --fall-duration: 9s; /* Define a duração da animação de queda como 9 segundos */
   --tail-fade-duration: var(--fall-duration); /* Define a duração da animação de desaparecimento do rastro */
 
   position: absolute; /* Define a posição absoluta para cada estrela */
