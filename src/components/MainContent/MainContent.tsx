@@ -6,6 +6,7 @@ import Services from '../../pages/Services/Services';
 import Contact from '../../pages/Contact/Contact';
 import CircleAnimation from '../CircleAnimation/CircleAnimation';
 import EstrelaAnimation from '../EstrelaAnimation/EstrelaAnimation';
+import Cometas from '../Cometas/Cometas';
 
 const MainContent: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ const MainContent: React.FC = () => {
       </main>
       <CircleAnimation />
       <EstrelaAnimation />
+      <Cometas />
     </div>
   );
 };
