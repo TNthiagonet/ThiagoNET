@@ -1,7 +1,19 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-})
+  build: {
+    chunkSizeWarningLimit: 1000, // Ajuste o limite conforme necessário
+    // Outras opções de build podem ser adicionadas aqui
+    // Por exemplo, configurando manualChunks para melhorar o agrupamento de chunks
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // Exemplo de configuração manualChunks
+          vendor: ['react', 'react-dom'],
+        },
+      },
+    },
+  },
+  // Outras configurações do Vite podem ser definidas aqui
+  // Por exemplo, plugins, configurações de servidor de desenvolvimento, etc.
+});

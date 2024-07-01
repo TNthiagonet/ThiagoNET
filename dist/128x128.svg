@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128px" height="128px" viewBox="0 0 128 128" version="1.1">
+<defs>
+<g>
+<symbol overflow="visible" id="glyph0-0">
+<path style="stroke:none;" d="M 11.703125 0 L 11.703125 -70.078125 L 58.5 -70.078125 L 58.5 0 Z M 13.15625 -1.75 L 57.03125 -1.75 L 57.03125 -68.328125 L 13.15625 -68.328125 Z M 13.15625 -1.75 "/>
+</symbol>
+<symbol overflow="visible" id="glyph0-1">
+<path style="stroke:none;" d="M 21.890625 0 L 21.890625 -66.6875 L 2.015625 -66.6875 L 2.015625 -80.265625 L 55.25 -80.265625 L 55.25 -66.6875 L 35.421875 -66.6875 L 35.421875 0 Z M 21.890625 0 "/>
+</symbol>
+<symbol overflow="visible" id="glyph0-2">
+<path style="stroke:none;" d="M 6.953125 0 L 6.953125 -80.265625 L 20.109375 -80.265625 L 47.53125 -26.65625 L 47.53125 -80.265625 L 60.09375 -80.265625 L 60.09375 0 L 46.515625 0 L 19.515625 -52.34375 L 19.515625 0 Z M 6.953125 0 "/>
+</symbol>
+</g>
+</defs>
+<g id="surface1">
+<g style="fill:#6a0dad; fill-opacity:1;">
+  <use xlink:href="#glyph0-1" x="1.082031" y="103.346338"/>
+  <use xlink:href="#glyph0-2" x="58.253117" y="103.346338"/>
+</g>
+<g style="fill:#7e17e6; fill-opacity:1;">
+  <use xlink:href="#glyph0-1" x="0.84375" y="103.55337"/>
+  <use xlink:href="#glyph0-2" x="58.014836" y="103.55337"/>
+</g>
+<g style="fill:#9321ff; fill-opacity:1;">
+  <use xlink:href="#glyph0-1" x="0.625" y="103.791651"/>
+  <use xlink:href="#glyph0-2" x="57.796086" y="103.791651"/>
+</g>
+<g style="fill:#a62bff; fill-opacity:1;">
+  <use xlink:href="#glyph0-1" x="0.417969" y="104.029932"/>
+  <use xlink:href="#glyph0-2" x="57.589055" y="104.029932"/>
+</g>
+<g style="fill:#ba35ff; fill-opacity:1;">
+  <use xlink:href="#glyph0-1" x="0.214844" y="104.264307"/>
+  <use xlink:href="#glyph0-2" x="57.38593" y="104.264307"/>
+</g>
+<g style="fill:#cf3fff; fill-opacity:1;">
+  <use xlink:href="#glyph0-1" x="0.0117188" y="104.518213"/>
+  <use xlink:href="#glyph0-2" x="57.182805" y="104.518213"/>
+</g>
+<g style="fill:#e948ff; fill-opacity:1;">
+  <use xlink:href="#glyph0-1" x="-0.207031" y="104.764307"/>
+  <use xlink:href="#glyph0-2" x="56.964055" y="104.764307"/>
+</g>
+<g style="fill:#ff52ff; fill-opacity:1;">
+  <use xlink:href="#glyph0-1" x="-0.421875" y="105.018213"/>
+  <use xlink:href="#glyph0-2" x="56.749211" y="105.018213"/>
+</g>
+<g style="fill:#ff5eff; fill-opacity:1;">
+  <use xlink:href="#glyph0-1" x="-0.664062" y="105.260401"/>
+  <use xlink:href="#glyph0-2" x="56.507023" y="105.260401"/>
+</g>
+</g>
+</svg>
