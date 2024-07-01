@@ -22,11 +22,12 @@ const About: React.FC = () => {
           presença online seja impactante e eficiente. 
         </p>
         <p className="about-description2">
-          Nossa missão é entender as necessidades únicas de cada <br />
-          cliente e desenvolver estratégias personalizadas para <br />
-          melhorar a visibilidade online de seus negócios. <br />
-          Combinamos criatividade e tecnologia para construir <br />
-          soluções digitais que realmente fazem a diferença.
+          Nossa missão é entender as necessidades únicas<br />
+          de cada cliente e desenvolver estratégias <br />
+          personalizadas para melhorar a visibilidade <br />
+          online de seus negócios. <br />
+          Combinamos criatividade e tecnologia <br />
+          para construir soluções digitais fazem a diferença.
         </p>
       </div>
     </section>
