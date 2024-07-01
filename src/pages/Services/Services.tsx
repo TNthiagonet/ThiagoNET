@@ -2,10 +2,10 @@ import React from 'react';
 import './Services.css';
 import Lottie from 'lottie-react';
 import Card from '../../components/Card/Card'; // Atualizei o nome do componente
-import Registro from '../../components/Card/img/dominio.png';
-import Criacao from '../../components/Card/img/webdeveloper.png';
-import Hospedagem from '../../components/Card/img/hosting.png';
-import Manutencao from '../../components/Card/img/security.png';
+import Registro from '../../components/Card/img/web-register.png';
+import Criacao from '../../components/Card/img/web-design.png';
+import Hospedagem from '../../components/Card/img/web-host.png';
+import Manutencao from '../../components/Card/img/web-manut.png';
 import animationData from '../../Animations/AnimationServicos.json';
 import cardClickSound from '../../Sounds/Laser.mp3'; // Adicione o som de clique do cartão
 
