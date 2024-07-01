@@ -23,7 +23,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
   return (
     <div className={`mobile-menu ${isOpen ? 'show' : ''}`}>
       <ul>
-        <li><a href="#home" onClick={handleClick}>Home</a></li>
+        <li><a href="#home" onClick={handleClick}>Início</a></li>
         <li><a href="#about" onClick={handleClick}>Sobre</a></li>
         <li><a href="#services" onClick={handleClick}>Serviços</a></li>
         <li><a href="#contact" onClick={handleClick}>Contato</a></li>

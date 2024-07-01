@@ -67,7 +67,7 @@ const Header: React.FC = () => {
           <div className="right">
             <ul className={`menu ${mobileMenuOpen ? 'open' : ''}`}>
               <li>
-                <a href="#home" onClick={() => { closeMenu(); playMenuSound(menuOpenSound, 0.5); }}>Home</a>
+                <a href="#home" onClick={() => { closeMenu(); playMenuSound(menuOpenSound, 0.5); }}>Início</a>
               </li>
               <li>
                 <a href="#about" onClick={() => { closeMenu(); playMenuSound(menuOpenSound, 0.5); }}>Sobre</a>
