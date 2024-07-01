@@ -18,10 +18,12 @@
   text-align: center;
   padding: 10px 2;
   position: fixed;
-  bottom: -50px; /* Inicialmente fora da tela */
+  bottom: -50px;
   width: 100%;
-  transition: bottom 0.3s ease; /* Transição suave para animar o aparecimento */
+  -webkit-transition: bottom 0.3s ease; /* Prefixo para navegadores WebKit como Safari e antigos versões do Chrome */
+  transition: bottom 0.3s ease; /* Transição padrão */
 }
+
 
 .footer.visible {
   bottom: 0; /* Mostra o footer quando chegar ao fim da página */
