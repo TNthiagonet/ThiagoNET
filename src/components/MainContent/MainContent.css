@@ -5,6 +5,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden; /* Oculta rolagem horizontal */
   background-image: linear-gradient(to bottom, 
     #210032,
     #310043,
@@ -29,11 +30,11 @@ h1, h2, h3, h4, h5, h6, p {
   min-height: 100vh;
   flex-direction: column;
   position: relative; /* Adicionando para usar z-index */
+  overflow-x: hidden; /* Oculta rolagem horizontal */
 }
 
 main {
-  margin-left: 100px;
-  margin-right: 100px;
+  margin: 0 100px; /* Margin ajustada para 100px em cada lado */
   padding: 20px;
   flex-grow: 1;
   position: relative;
@@ -47,8 +48,7 @@ section {
 
 @media (max-width: 768px) {
   main {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 20px; /* Ajuste de margem para telas menores */
   }
 }
 
@@ -59,6 +59,7 @@ section {
   width: 100%;
   height: 100%;
   z-index: 0; /* Colocando CircleBG abaixo do main */
+  overflow: hidden; /* Garantindo que os círculos não causem barras de rolagem */
 }
 
 .circle {

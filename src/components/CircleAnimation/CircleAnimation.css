@@ -2,12 +2,14 @@
   position: fixed;
   top: 0;
   left: 0;
-  overflow: hidden;
+  width: 100%; /* Ajustando largura para cobrir toda a viewport */
+  height: 100%; /* Ajustando altura para cobrir toda a viewport */
   z-index: 0; /* Colocando CircleBG abaixo do main */
+  overflow: hidden; /* Mantendo overflow hidden para garantir que conteúdo não vaze */
 }
 
 .circle {
-  position: absolute; /* Mudando para absolute para posicionar corretamente */
+  position: absolute;
   border-radius: 50%;
   opacity: 1;
   animation: moveCircle 10s infinite alternate;
