@@ -20,8 +20,10 @@ const Home: React.FC = () => {
       <div className="home-content">
         <h1 className="home-title">Olá!</h1>
         <p className="home-description">
-        Bem-vindo à ThiagoNET!
-        Somos uma agência de desenvolvimento web dedicada a transformar suas ideias em realidade. Com um time especializado em design e desenvolvimento, criamos soluções digitais que destacam sua presença online.
+        Bem-vindo à ThiagoNET! <br />
+        Somos uma agência de desenvolvimento web <br /> 
+        dedicada a transformar suas ideias em realidade. <br />
+        Com um time especializado em design e desenvolvimento, criamos soluções digitais que destacam sua presença online.
         </p>
         <ButtonPadrao onClick={handleNavigateToAbout} soundSrc={menuOpenSound}>Sobre nós</ButtonPadrao> {/* Passando o som para o botão */}
       </div>
