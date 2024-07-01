@@ -19,7 +19,7 @@ const Services: React.FC = () => {
         <Lottie animationData={animationData} loop autoplay style={{ width: '100%', height: 'auto' }} />
       </div>
       <div className="services-header-p">
-        <p>Nossos serviços mais procurados</p>
+        <p>Alguns de nossos serviços.</p>
       </div>
       <div className="services-card-container">
         <Card
