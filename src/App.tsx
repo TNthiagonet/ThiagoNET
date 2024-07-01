@@ -14,8 +14,8 @@ const App: React.FC = () => {
       <SideMenu position="left" />
       <SideMenu position="right" />
       <MainContent />
-      <Footer />
       <ButtonWhatsapp />
+      <Footer />
     </div>
   );
 };

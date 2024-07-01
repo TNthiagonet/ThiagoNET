@@ -1,19 +1,19 @@
 /* Arquivo: src/components/Footer/Footer.css */
 
 .footer {
-  background-image: linear-gradient(to bottom, 
-  #210032a2,
-  #310043a2,
-  #420054a2,
-  #520065a2,
-  #620076a2,
-  #620076a2,
-  #520065a2,
-  #420054a2,
-  #310043a2,
-  #210032a2
-);
-
+  background-image: linear-gradient(
+    to bottom,
+    #210032a2,
+    #310043a2,
+    #420054a2,
+    #520065a2,
+    #620076a2,
+    #620076a2,
+    #520065a2,
+    #420054a2,
+    #310043a2,
+    #210032a2
+  );
   color: #9c929e;
   text-align: center;
   padding: 10px 2;
@@ -29,9 +29,15 @@
 
 .footer a {
   text-decoration: none; /* Remove o sublinhado dos links dentro do footer */
+  color: #9c929e; /* Cor padrão do texto */
+  transition: color 0.3s ease; /* Transição suave para a cor do texto */
 }
 
 .footer a.thiagonet {
-  color: #d5b6db; /* Cor branca para o texto */
   font-weight: bold; /* Texto em negrito */
+  cursor: pointer; /* Adiciona cursor de mão */
+}
+
+.footer a.thiagonet:hover {
+  color: #d5b6db; /* Cor branca para o texto ao passar o mouse */
 }
