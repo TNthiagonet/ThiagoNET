@@ -26,7 +26,7 @@
       width: 100%;
       height: 100%;
       filter: grayscale(100%);
-      opacity: 0.3;
+      opacity: 0.4;
       transition: filter 0.3s, opacity 0.3s;
       user-select: none;
       pointer-events: none;
@@ -37,119 +37,119 @@
   @keyframes animate {
     0% {
       transform: translateY(0) rotate(0deg);
-      opacity: 0.3;
+      opacity: 0.4;
       border-radius: 0;
     }
     100% {
       transform: translateY(-100vh) rotate(720deg); /* Ajustado para ser relativo à altura da tela */
-      opacity: 0.3;
+      opacity: 0.4;
       border-radius: 50%;
     }
   }
 
   /* Estilo de cada bolinha */
   li:nth-child(1) {
-    left: 27vw;
-    width: 10vw;
-    height: 10vh;
+    left: 27%;
+    width: 10%;
+    height: 10%;
     animation-delay: 0s;
     animation-duration: 14s;
   }
   li:nth-child(2) {
-    left: 10vw;
-    width: 4.8vw;
-    height: 4.8vh;
+    left: 10%;
+    width: 4.8%;
+    height: 4.8%;
     animation-delay: 1s;
     animation-duration: 15s;
   }
   li:nth-child(3) {
-    left: 65vw;
-    width: 9vw;
-    height: 9vh;
+    left: 65%;
+    width: 9%;
+    height: 9%;
     animation-delay: 2s;
     animation-duration: 16s;
   }
   li:nth-child(4) {
-    left: 42vw;
-    width: 3vw;
-    height: 3vh;
+    left: 42%;
+    width: 3%;
+    height: 3%;
     animation-delay: 3s;
     animation-duration: 24s;
   }
   li:nth-child(5) {
-    left: 58vw;
-    width: 5.5vw;
-    height: 5.5vh;
+    left: 58%;
+    width: 5.5%;
+    height: 5.5%;
     animation-delay: 4s;
     animation-duration: 18s;
   }
   li:nth-child(6) {
-    left: 73vw;
-    width: 6vw;
-    height: 6vh;
+    left: 73%;
+    width: 6%;
+    height: 6%;
     animation-delay: 5s;
     animation-duration: 26s;
   }
   li:nth-child(7) {
-    left: 31vw;
-    width: 10vw;
-    height: 10vh;
+    left: 31%;
+    width: 10%;
+    height: 10%;
     animation-delay: 6s;
     animation-duration: 20s;
   }
   li:nth-child(8) {
-    left: 50vw;
-    width: 6.1vw;
-    height: 6.1vh;
+    left: 50%;
+    width: 6.1%;
+    height: 6.1%;
     animation-delay: 7s;
     animation-duration: 28s;
   }
   li:nth-child(9) {
-    left: 18vw;
-    width: 3.5vw;
-    height: 3.5vh;
+    left: 18%;
+    width: 3.5%;
+    height: 3.5%;
     animation-delay: 8s;
     animation-duration: 24s;
   }
   li:nth-child(10) {
-    left: 78vw;
-    width: 13vw;
-    height: 13vh;
+    left: 78%;
+    width: 13%;
+    height: 13%;
     animation-delay: 9s;
     animation-duration: 22s;
   }
   li:nth-child(11) {
-    left: 1vw;
-    width: 12vw;
-    height: 12vh;
+    left: 1%;
+    width: 12%;
+    height: 12%;
     animation-delay: 10s;
     animation-duration: 10s;
   }
   li:nth-child(12) {
-    left: 90vw;
-    width: 11vw;
-    height: 11vh;
+    left: 90%;
+    width: 11%;
+    height: 11%;
     animation-delay: 11s;
     animation-duration: 12s;
   }
   li:nth-child(13) {
-    left: 23vw;
-    width: 10vw;
-    height: 10vh;
+    left: 23%;
+    width: 10%;
+    height: 10%;
     animation-delay: 12s;
     animation-duration: 19s;
   }
   li:nth-child(14) {
-    left: 50vw;
-    width: 8vw;
-    height: 8vh;
+    left: 50%;
+    width: 8%;
+    height: 8%;
     animation-delay: 13s;
     animation-duration: 18s;
   }
   li:nth-child(15) {
-    left: 85vw;
-    width: 6vw;
-    height: 6vh;
+    left: 85%;
+    width: 6%;
+    height: 6%;
     animation-delay: 14s;
     animation-duration: 15s;
   }

@@ -35,7 +35,7 @@ const animations = [
   bg15,
 ];
 
-const BubbleAnimation: React.FC = () => {
+const EstrelaAnimation: React.FC = () => {
   return (
     <div className="circles">
       <ul>
@@ -56,4 +56,4 @@ const BubbleAnimation: React.FC = () => {
   );
 };
 
-export default BubbleAnimation;
+export default EstrelaAnimation;
