@@ -26,7 +26,7 @@ const Services: React.FC = () => {
           imageUrl={Registro}
           title="Registro"
           description="Ex: www.SuaMarca.com"
-          buttonLabel="Ver Mais"
+          buttonLabel="Contratar"
           buttonUrl="https://wa.me/5583981790771"
           soundSrc={cardClickSound}
         />
@@ -35,7 +35,7 @@ const Services: React.FC = () => {
           imageUrl={Criacao}
           title="Criação"
           description="Desenvolvimento Web"
-          buttonLabel="Ver Mais"
+          buttonLabel="Contratar"
           buttonUrl="https://wa.me/5583981790771"
           soundSrc={cardClickSound}
         />
@@ -44,7 +44,7 @@ const Services: React.FC = () => {
           imageUrl={Hospedagem}
           title="Hospedagem"
           description="Servidores especiais."
-          buttonLabel="Ver Mais"
+          buttonLabel="Contratar"
           buttonUrl="https://wa.me/5583981790771"
           soundSrc={cardClickSound}
         />
@@ -53,7 +53,7 @@ const Services: React.FC = () => {
           imageUrl={Manutencao}
           title="Manutenção"
           description="Seu serviço funcionando."
-          buttonLabel="Ver Mais"
+          buttonLabel="Contratar"
           buttonUrl="https://wa.me/5583981790771"
           soundSrc={cardClickSound}
         />
