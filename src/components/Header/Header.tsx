@@ -6,6 +6,7 @@ import animationMenuOpen from '../../Animations/MenuOpen.json';
 import animationMenuClose from '../../Animations/MenuClose.json';
 import menuOpenSound from '../../Sounds/Laser.mp3';
 import logoHoverSound from '../../Sounds/ThiagoNET.mp3'; // Importe o som ItensHover aqui
+import tnLogoAnimation from '../../Animations/tnLogoAnimation.json'; // Importe o arquivo MenuOpen.json para tnLogo
 
 type AnimationData = any;
 
@@ -57,6 +58,11 @@ const Header: React.FC = () => {
       <div className="header-content">
         <nav className="top-nav">
           <div className="left">
+            {/* Renderiza a animação Lottie ao invés da imagem */}
+            <Lottie
+              animationData={tnLogoAnimation}
+              style={{ width: '50px', height: '50px' }} // Ajuste o tamanho conforme necessário
+            />
             <a href="#" className="logo-text" onMouseEnter={playLogoHoverSound}>
               ThiagoNET
             </a>

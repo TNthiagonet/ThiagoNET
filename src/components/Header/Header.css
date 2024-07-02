@@ -1,17 +1,18 @@
 /* Estilo para o header */
 header {
-  background-image: linear-gradient(to bottom, 
-  #210032a2,
-  #310043a2,
-  #420054a2,
-  #520065a2,
-  #620076a2,
-  #620076a2,
-  #520065a2,
-  #420054a2,
-  #310043a2,
-  #210032a2
-);
+  background-image: linear-gradient(
+    to bottom,
+    #210032a2,
+    #310043a2,
+    #420054a2,
+    #520065a2,
+    #620076a2,
+    #620076a2,
+    #520065a2,
+    #420054a2,
+    #310043a2,
+    #210032a2
+  );
   color: #f9e1ff;
   padding: 20px 40px;
   width: 100%;
@@ -41,21 +42,24 @@ header {
   flex: 1;
 }
 
+.header-content .top-nav .left {
+  display: flex;
+  align-items: center;
+}
+
+.header-content .top-nav .left .logo-image {
+  height: 40px; /* Ajuste conforme necessário */
+  margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+
 .header-content .top-nav .left .logo-text {
   font-size: 25px; /* Tamanho da fonte da logo */
   font-weight: bold;
-  color: #f9e1ff ;
+  color: #f9e1ff;
   text-decoration: none;
   white-space: nowrap; /* Evita que o texto quebre em várias linhas */
   overflow: hidden; /* Evita que o texto derrame do container */
   text-overflow: ellipsis; /* Mostra um ponto de elipse (...) quando o texto estoura */
-  display: flex; /* Adiciona flexbox para alinhar logo e texto */
-  align-items: center; /* Centraliza logo e texto verticalmente */
-}
-
-.header-content .top-nav .left .logo-image {
-  height: 50px; /* Define a altura da imagem */
-  margin-right: 10px; /* Espaço entre a imagem e o texto */
 }
 
 .header-content .top-nav .center {
@@ -86,7 +90,7 @@ header {
 }
 
 .header-content .top-nav .right ul li a {
-  color: #f9e1ff ;
+  color: #f9e1ff;
   font-size: 20px;
   text-decoration: none;
   font-weight: bold;
