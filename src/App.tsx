@@ -1,48 +1,36 @@
+// src/App.tsx
+
 import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import ReactGA from 'react-ga';
 import Header from './components/Header/Header';
-import SideMenu from './components/SideMenu/SideMenu';
 import MainContent from './components/MainContent/MainContent';
 import Footer from './components/Footer/Footer';
 import ButtonWhatsapp from './components/Button/ButtonWhatsapp/ButtonWhatsapp';
 
-// Declaração global para o TypeScript reconhecer dataLayer
-declare global {
-  interface Window {
-    dataLayer: any[];
-    gtag: (...args: any[]) => void;
-  }
-}
+// Inicializa o Google Analytics
+ReactGA.initialize('G-MZ7KLNFCWY');
 
 const App: React.FC = () => {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-MZ7KLNFCWY';
-    script.async = true;
-    document.head.appendChild(script);
+  const location = useLocation();
 
-    script.onload = () => {
-      // Inicializa o dataLayer se ainda não estiver definido
-      window.dataLayer = window.dataLayer || [];
-      // Define a função gtag para enviar dados ao Google Analytics
-      window.gtag = function() {
-        window.dataLayer.push(arguments);
-      };
-      // Configura a data de início do Google Analytics
-      window.gtag('js', new Date());
-      // Configura o ID de rastreamento do Google Analytics
-      window.gtag('config', 'G-MZ7KLNFCWY');
-    };
-  }, []);
+  // Registra a visualização da página sempre que a rota muda
+  useEffect(() => {
+    ReactGA.pageview(location.pathname + location.search);
+  }, [location]);
 
   return (
-    <div>
-      <Header />
-      <SideMenu position="left" />
-      <SideMenu position="right" />
-      <MainContent />
-      <ButtonWhatsapp />
-      <Footer />
-    </div>
+    <Router>
+      <div>
+        <Header />
+        <Routes>
+          <Route path="/" element={<MainContent />} />
+          {/* Adicione mais rotas conforme necessário */}
+        </Routes>
+        <ButtonWhatsapp />
+        <Footer />
+      </div>
+    </Router>
   );
 };
 

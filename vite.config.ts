@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   build: {
-    chunkSizeWarningLimit: 1000, // Ajuste o limite conforme necessário
+    chunkSizeWarningLimit: 1500, // Ajuste o limite conforme necessário
     // Outras opções de build podem ser adicionadas aqui
     // Por exemplo, configurando manualChunks para melhorar o agrupamento de chunks
     rollupOptions: {
