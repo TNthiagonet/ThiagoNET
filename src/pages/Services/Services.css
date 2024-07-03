@@ -1,4 +1,5 @@
 /* Services.css */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
 /* Estilo principal da seção "Serviços" */
 #services {
@@ -12,6 +13,9 @@
 }
 
 .services-header h1 {
+  font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin-top: 65px;
   font-size: 3rem; /* Aumenta o tamanho da fonte */
   color: #f9e1ff; /* Define a cor do texto */

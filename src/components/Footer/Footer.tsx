@@ -1,3 +1,4 @@
+// Arquivo: src/components/Footer/Footer.tsx
 import React, { useEffect, useState } from 'react';
 import './Footer.css';
 
@@ -24,7 +25,7 @@ const Footer: React.FC = () => {
   return (
     <footer className={`footer ${isVisible ? 'visible' : ''}`}>
       <div className="container">
-        <p>&copy; {currentYear} <a className="jc-goleiros">Copyright | </a>Developer <a href="https://thiagonet.com" className="thiagonet">ThiagoNET</a></p>
+        <p>&copy; {currentYear} <a className="ThiagoNET">Copyright | </a>Developer <a href="https://thiagonet.com" className="thiagonet">ThiagoNET</a></p>
       </div>
     </footer>
   );
