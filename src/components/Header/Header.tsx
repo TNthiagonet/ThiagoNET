@@ -13,6 +13,7 @@ type AnimationData = any;
 const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [soundPlayed, setSoundPlayed] = useState(false);
+  const [logoSoundPlayable, setLogoSoundPlayable] = useState(true); // Estado para controlar o som de hover
   const [animationData, setAnimationData] = useState<AnimationData>(animationMenuOpen);
   const logoHoverAudio = useRef(new Audio(logoHoverSound)); // Usar useRef para armazenar o objeto de áudio
 
@@ -45,12 +46,19 @@ const Header: React.FC = () => {
 
   // Função para reproduzir som ao fazer hover apenas nas logos
   const playLogoHoverSound = () => {
-    if (!logoHoverAudio.current.paused) {
-      logoHoverAudio.current.pause();
-      logoHoverAudio.current.currentTime = 0;
+    if (logoSoundPlayable) {
+      if (!logoHoverAudio.current.paused) {
+        logoHoverAudio.current.pause();
+        logoHoverAudio.current.currentTime = 0;
+      }
+      logoHoverAudio.current.volume = 0.5; // Volume ajustável conforme necessário
+      logoHoverAudio.current.play();
+
+      setLogoSoundPlayable(false);
+      setTimeout(() => {
+        setLogoSoundPlayable(true);
+      }, 5000); // 5 segundos antes de permitir que o som toque novamente
     }
-    logoHoverAudio.current.volume = 0.5; // Volume ajustável conforme necessário
-    logoHoverAudio.current.play();
   };
 
   return (
