@@ -7,7 +7,7 @@ import Criacao from '../../components/Card/img/web-design.png';
 import Hospedagem from '../../components/Card/img/web-host.png';
 import Manutencao from '../../components/Card/img/web-manut.png';
 import animationData from '../../Animations/AnimationServicos.json';
-import cardClickSound from '../../Sounds/Laser.mp3'; // Adicione o som de clique do cartão
+import cardClickSound from '../../Sounds/Click.mp3'; // Adicione o som de clique do cartão
 
 const Services: React.FC = () => {
   return (

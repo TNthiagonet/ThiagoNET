@@ -4,7 +4,7 @@ import MobileMenu from '../MobileMenu/MobileMenu';
 import Lottie from 'lottie-react';
 import animationMenuOpen from '../../Animations/MenuOpen.json';
 import animationMenuClose from '../../Animations/MenuClose.json';
-import menuOpenSound from '../../Sounds/Laser.mp3';
+import menuOpenSound from '../../Sounds/Click.mp3';
 import logoHoverSound from '../../Sounds/ThiagoNET.mp3'; // Importe o som ItensHover aqui
 import tnLogoAnimation from '../../Animations/tnLogoAnimation.json'; // Importe o arquivo MenuOpen.json para tnLogo
 

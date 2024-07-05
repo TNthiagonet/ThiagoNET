@@ -5,7 +5,7 @@ import './Home.css';
 import Lottie from 'lottie-react';
 import animationData from '../../Animations/AnimationHome.json'; // Ajuste o caminho conforme necessário
 import ButtonPadrao from '../../components/Button/ButtonPadrao/ButtonPadrao'; // Importando o componente ButtonPadrao
-import menuOpenSound from '../../Sounds/Laser.mp3'; // Importando o som
+import menuOpenSound from '../../Sounds/Click.mp3'; // Importando o som
 
 const Home: React.FC = () => {
   const handleNavigateToAbout = () => {
