@@ -1,5 +1,3 @@
-// src/App.tsx
-
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header/Header';
 import SideMenu from './components/SideMenu/SideMenu';
@@ -11,16 +9,20 @@ import thiagoNetSound from './Sounds/ThiagoNET.mp3';
 
 const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
+  const [soundPlayed, setSoundPlayed] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-      const audio = new Audio(thiagoNetSound);
-      audio.play();
-    }, 2000); // Altere o tempo conforme necessário
+      if (!soundPlayed) {
+        const audio = new Audio(thiagoNetSound);
+        audio.play();
+        setSoundPlayed(true);
+      }
+    }, 2000);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, []); // Dependência vazia para executar apenas uma vez
 
   return (
     <div>
