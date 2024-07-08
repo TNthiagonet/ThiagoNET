@@ -1,6 +1,6 @@
 import React from 'react';
 import './MobileMenu.css';
-import menuOpenSound from '../../Sounds/Laser.mp3';
+import menuOpenSound from '../../Sounds/Click.mp3';
 
 interface MobileMenuProps {
   isOpen: boolean;
